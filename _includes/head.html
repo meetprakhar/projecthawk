@@ -17,6 +17,7 @@
   <style>
   {% capture include_to_scssify %}
     {% include main.scss %}
+    {% include css/custom.css %}
   {% endcapture %}
   {{ include_to_scssify | scssify }}
   </style>
