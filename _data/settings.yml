@@ -25,7 +25,61 @@ intro:
       title: title3
       cap: caption 3
 
-   
+
+#-------------------------------
+# Three Simple Steps
+simplesteps:
+  - image: 02.jpg
+    alt: 'A'
+    title: RANDOM TITLE 1
+    desc: Random Description 1
+  - image: 02.jpg
+    alt: 'B'
+    title: RANDOM TITLE 2
+    desc: Random Description 2
+  - image: 02.jpg
+    alt: 'C'
+    title: RANDOM TITLE 3
+    desc: Random Description 3
+  
+#-------------------------------
+# Team Details
+team:
+  - name: Kay Garland
+    pic: team_mambers/01.jpg
+    position: Lead Designer
+    social:
+      - title: twitter
+        url: #
+      - title: facebook
+        url: #
+      - title: stack-overflow
+        url: #
+
+  - name: Kay Garland
+    pic: team_mambers/01.jpg
+    position: Lead Designer
+    social:
+      - title: twitter-square
+        url: #
+      - title: facebook
+        url: #
+      - title: stack-overflow
+        url: #
+  - name: Kay Garland
+    pic: team_mambers/01.jpg
+    position: Lead Designer
+    social:
+      - title: twitter
+        url: #
+      - title: facebook
+        url: #
+      - title: stack-overflow
+        url: #
+
+
+
+     
 
 #-------------------------------
 # Contact links

@@ -13,6 +13,7 @@
     1.4 Syntax Highlighting
     1.5 Grid
     1.6 Zoom
+    1.7 Carousal Bootstrap
 
 :: 2 Base Styles
     2.1 Base
@@ -27,6 +28,8 @@
     3.7 Subscribe
     3.8 Instagram
     3.9 Footer
+    3.10 OurTeam
+    3.11 SimpleSteps
 
 :: 4-Layouts
     4.1 Page-home
@@ -36,6 +39,7 @@
     4.5 Tag Page
 <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
+$baseurl:"{{site.baseurl}}";
 
 @import '0-settings/variables';
 @import '0-settings/mixins';
@@ -61,6 +65,9 @@
 
 // 1.6 Zoom
 @import '1-tools/zoom';
+
+// 1.7 Bootstrap Carousal
+@import '1-tools/carousal_bootstrap';
 
 
 /* >>>>>>>>>>>>>> :: 2-Base Styles <<<<<<<<<<<<<<< */
@@ -97,6 +104,12 @@
 
 // 3.9 Instagram
 @import '3-modules/footer';
+
+// 3.10 OurTeam
+@import '3-modules/ourteam';
+
+// 3.11 SimpleSteps
+@import '3-modules/simplesteps';
 
 /* >>>>>>>>>>>>>> :: 4-Layouts <<<<<<<<<<<<<<< */
 
