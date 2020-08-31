@@ -15,13 +15,15 @@
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
   <style>
-    
-  {% include css/custom.css %}
-  
-  {% capture include_to_scssify %}  
-  {% include main.scss %}
-
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
+    {% capture include_to_scssify %}  
+    {% include main.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
   </style>
+
+  <style>
+    {% include css/custom.css %}
+    {% include css/carousal_bootstrap.css %}
+  </style>
+
 </head>
