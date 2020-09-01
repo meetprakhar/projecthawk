@@ -8,7 +8,7 @@
         margin-top: 25px; } }
     .blog-wrapper .blog-content:before {
       position: absolute;
-      top: 40%;
+      top: 30%;
       left: 35px;
       width: 10px;
       height: 100%;
@@ -32,7 +32,6 @@
   
   .blog-wrapper .thumb-image {
     width: 100%;
-    height: 100%;
     background: #fff;
     overflow: hidden; }
     .blog-wrapper .thumb-image:hover img {

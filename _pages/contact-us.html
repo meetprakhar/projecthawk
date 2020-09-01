@@ -13,44 +13,139 @@ permalink: /contact-us/
         text-align:center;
         justify-items: center;
     }
+
+    .contact_opt{
+        margin-bottom: 25px; 
+        display: flex;
+        align-items: center;
+    }
+
+    .contact_icon{
+        color: black;
+        margin: 10px 25px 10px 10px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    input[type=email] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+
+    .btn-xl {
+    padding: 20px 40px;
+    border-color: #f6b141;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #f6b141;
+    }
+
+    .btn-xl:hover,
+    .btn-xl:focus,
+    .btn-xl:active,
+    .btn-xl.active,
+    .open .dropdown-toggle.btn-xl {
+        border-color: #f6b141;
+        color: #fff;
+        background-color: #{{ site.data.template.color.secondary }};
+    }
+
+    .btn-xl:active,
+    .btn-xl.active,
+    .open .dropdown-toggle.btn-xl {
+        background-image: none;
+    }
+
+    .btn-xl.disabled,
+    .btn-xl[disabled],
+    fieldset[disabled] .btn-xl,
+    .btn-xl.disabled:hover,
+    .btn-xl[disabled]:hover,
+    fieldset[disabled] .btn-xl:hover,
+    .btn-xl.disabled:focus,
+    .btn-xl[disabled]:focus,
+    fieldset[disabled] .btn-xl:focus,
+    .btn-xl.disabled:active,
+    .btn-xl[disabled]:active,
+    fieldset[disabled] .btn-xl:active,
+    .btn-xl.disabled.active,
+    .btn-xl[disabled].active,
+    fieldset[disabled] .btn-xl.active {
+        border-color: #f6b141;
+        background-color: #f6b141;
+    }
+
+    .btn-xl .badge {
+        color: #f6b141;
+        background-color: #fff;
+    }  
+
 </style>
 
 <div class="container pt-100 pb-100">
 
-    <h1 class="mb-50 justify-center-content">Contact Us</h1>
+    <h1 class="section-heading" style="margin-bottom: 50px;">Contact Us</h1>
 
     <div class="row">
         <div class="col-sm-6">
-            <div class="justify-center-content md-30">
-                <h3>Let’s Talk Together</h3>
-                <p style="margin-bottom: 10px">
-                SOME DATA HERE.
-                </p>
+            <div style="margin-bottom: 50px;">
+                <h3>{{ site.data.settings.contactus.head }}</h3>
                 <p>
-                    Some More Text.
+                    {{ site.data.settings.contactus.intro }}
                 </p>
             </div>
 
-            <div class="justify-center-content" >
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-map fa-stack-1x fa-inverse"></i>
-                  </span>
-                <h5>asudbasiudbasd</h5>    
-            </div>
+            <div>
+
+                {% for cntat in site.data.settings.contactus.contacts %}
+
+                <div class="contact_opt" >
+                    <i class="contact_icon fa fa-{{cntat.icon}} fa-3x"></i>
+                    <p style="margin-bottom: 0;">{{cntat.details}}</p>    
+                </div>
             
-            <div class="justify-center-content">
-                <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                </span>
-                <h5>AOSIUDBOIASDUB</h5>                    
+                {% endfor %}
             </div>
+
 
         </div>
         <div class="col-sm-6">
-            <div class="col-xs-12 col-sm-6 ">
                 <h3>Send A Message</h3>
+
                 <form class="contact-form" action="https://efgstore.in/contact/index/post/"
                     id="contact-form" method="post" data-hasrequired="* Required Fields"
                     novalidate="novalidate">
@@ -79,7 +174,7 @@ permalink: /contact-us/
                                     <div class="control captcha-image">
                                         <img alt="Please type the letters and numbers below"
                                             class="captcha-img" height="50"
-                                            src="https://efgstore.in/media/captcha/base/abdc2ae1fc50051be003d390775cb494.png">
+                                            src="https://efgstore.in/media/captcha/base/abdc2ae1fc50011be003d390775cb494.png">
                                         <button type="button" class="action reload captcha-reload"
                                             title="Reload captcha"><span>Reload captcha</span></button>
                                     </div>
@@ -89,19 +184,20 @@ permalink: /contact-us/
                     </div>
 
                     <div class="form-actions">
-                        <input type="hidden" name="hideit" id="hideit" value="">
-                        <button type="submit" title="Submit" class="btn-novetty btn-raised primary">
+                        <button type="submit" title="Submit" class="btn-xl">
                             <span>Submit</span>
                         </button>
                     </div>
                 </form>
-            </div>
-            <div class="col-xs-12 col-sm-6 padding-left-60 hidden-xs">
-            </div>
-        </div>
-        <div class="col-sm-6 contact-maps padding-left-60">
         </div>
     </div>
 
     </div>
 </div>
+
+<!-- Stacking Icons
+<span class="fa-stack fa-2x">
+<i class="fa fa-circle fa-stack-2x" style="color: lightgray;"></i>
+<i class="fa fa-phone fa-stack-1x fa-inverse" style="color: black;"></i>
+</span>
+-->

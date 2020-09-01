@@ -4,6 +4,19 @@ title: Zolan
 logo: logo.svg # You can add own logo.
 description: Zolan is modern minimal theme for Jekyll
 
+#-------------------------------
+# contact Us Settings
+contactus:
+  head: Let’s Talk Together
+  intro: 'Shoot us an e-mail or give us a call. '
+  contacts:
+    - icon: map
+      details: '<a href="#">aisjbdnasijdb ONE</a>'
+    - icon: phone
+      details: 'aisjbdnasijdb TWO'
+    - icon: envelope-open
+      details: 'aisjbdnasijdb THREE'
+  
 
 #-------------------------------
 # intro Settings
@@ -31,8 +44,8 @@ intro:
 simplesteps:
   - image: 02.jpg
     alt: 'A'
-    title: RANDOM TITLE 1
-    desc: Random Description 1
+    title: Where there's a will, there's <Strong><a href="#">Axotico!</a></strong>
+    desc: 'So order now in single or bulk quantities and be assured to have a hassle-free experience delivered at the comfort of your own home.'
   - image: 02.jpg
     alt: 'B'
     title: RANDOM TITLE 2
@@ -49,7 +62,7 @@ team:
     pic: team_mambers/01.jpg
     position: Lead Designer
     social:
-      - title: twitter
+      - title: linkedin
         url: #
       - title: facebook
         url: #
