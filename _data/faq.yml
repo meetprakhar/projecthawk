@@ -1,0 +1,26 @@
+#-------------------------------
+# FAQ Settings
+faqdata:
+  - topic:
+    name: General
+    questions:
+      - id: 1
+        ques: Question 1
+        ans: This is answer one.
+      - id: 2
+        ques: Question 2
+        ans: This is answer one2.
+      - id: 3
+        ques: Question 3
+        ans: This is answer one3.
+
+  - topic:
+    name: NextGeneral
+    questions:
+      - id: 1
+        ques: Question 11
+        ans: This is answer two.
+      - id: 2
+        ques: Question 12
+        ans: This is answer two2.
+        

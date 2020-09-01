@@ -1,0 +1,175 @@
+---
+layout: default
+title: FAQs
+permalink: /faq/
+---
+
+<link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.css">
+
+<script>
+    function showSection(id){
+    $(".faq-item").hide();
+    $("#"+id+"_info").show();
+}
+</script>
+
+<style>
+    .section{
+        padding: 5%;
+        }
+    
+    @media (max-width: 768px){
+        .faq-category .faq-category-nav {
+        margin-bottom: 30px;
+        }
+    }
+
+    p, a, li, blockquote, label {
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 25px;
+        color: #808080;
+        margin-bottom: 0;
+    }
+    .faq-category .faq-category-nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 15px;
+        background: #fafafa;
+        padding: 30px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .faq-category .block {
+    background: #fff;
+    padding: 40px 50px;
+    }
+
+    .faq .block .faq-item .item .item-link {
+    position: relative;
+    padding: 10px 0 10px 18px;
+}
+
+.faq .block .faq-item .item .accordion-block p {
+    padding: 20px;
+}
+
+.faq .block .faq-item .faq-item-title h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.faq .block .faq-item .item .item-link:before {
+    font-family: FontAwesome;
+    content: "\f107";
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.faq .block .faq-item .faq-item-title {
+    margin-bottom: 30px;
+}
+
+p, a, li, blockquote, label {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+    color: #808080;
+    margin-bottom: 0;
+}
+
+.faq-category .faq-category-nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.faq .block .faq-item .item .accordion-block {
+    background: #fafafa;
+    margin-left: 18px;
+}
+</style>
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1 style="text-align: center;">Frequently Asked Questions</h1>
+				<!-- Page Description -->
+				<p></p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="faq-category faq section pt-0">
+	<div class="container">
+		<div class="row">
+            <!--
+			<div class="col-md-3">
+				<nav class="faq-category-nav">
+					<ul>
+						<li onclick="showSection('faq_gen')" ;="">General</li>
+						<li onclick="showSection('faq_basic')" ;="">The Basic</li>
+						<li onclick="showSection('faq_app')" ;="">The App</li>
+					</ul>
+				</nav>
+            </div>
+            -->
+			<div class="col-lg-9 m-auto">
+                
+                {% for faqtopic in site.data.faq.faqdata %}
+
+                <div class="block shadow  mb-50">                    
+                    <div class="faq-item" id="faq_{{faqtopic.name}}_info" style="display: block;">
+						
+                        <!-- Title -->
+						<div class="faq-item-title">
+							<h2>{{faqtopic.name}}</h2>
+						</div>
+
+						<!-- Get Started Accordion -->
+						<div id="gstAccordion" data-children=".item">
+						
+                        {% for doubt in faqtopic.questions %}
+                          
+                          <!-- Accordion Items -->
+						  <div class="item">
+						  	<div class="item-link">
+							    <a data-toggle="collapse" data-parent="#gstAccordion" 
+                                href="#{{faqtopic.name}}_{{doubt.id}}">
+                                    {{doubt.ques}}
+                                </a>
+                                <div id="{{faqtopic.name}}_{{doubt.id}}" class="collapse accordion-block">
+                                    <p>
+                                        {{doubt.ans}}
+                                    </p>
+                                  </div>
+						  	</div>
+						  </div>
+
+						{% endfor %}
+
+						</div>
+					</div>
+                </div>
+
+                {% endfor %}
+
+			</div>
+		</div>
+	</div>
+</section>
