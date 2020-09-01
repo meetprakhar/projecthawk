@@ -1,35 +1,36 @@
-<div class="container" style="margin-bottom: 400px;">
+<section id="SimpleSteps">
+    <div class="container">
+        <div class="blog-wrapper alternate_posts">
 
-    <div class="blog-wrapper alternate_posts">
-    
-        {% for step in site.data.settings.simplesteps %}
-    
-        <div class="row single-blog block-sm wow fadeIn  pb-100" data-wow-duration="2s"
-            style="visibility: visible; animation-duration: 2s; animation-name: fadeIn;">
-            <div class="col-md-6">
-                <div class="thumb-image">
-                    <img src="{{site.baseurl}}/images/{{step.image}}" alt="{{step.alt}}" />
+            {% for step in site.data.settings.simplesteps %}
+
+            <div class="row single-blog block-sm wow fadeIn  pb-100" data-wow-duration="2s"
+                style="visibility: visible; animation-duration: 2s; animation-name: fadeIn;">
+                <div class="col-md-6">
+                    <div class="thumb-image">
+                        <img src="{{site.baseurl}}/images/{{step.image}}" alt="{{step.alt}}" />
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="blog-content">
-                    <div class="right-text">
-                        <div class="blog-title">
-                            <h2>{{step.title}}</h2>
-                        </div>
-                        <p></p>
-                        <p>
-                            {{step.desc}}
-                        </p>
-                        <div class="btn-read-more"><a href="">Read More</a>
+                <div class="col-md-6">
+                    <div class="blog-content">
+                        <div class="right-text">
+                            <div class="blog-title">
+                                <h2>{{step.title}}</h2>
+                            </div>
+                            <p></p>
+                            <p>
+                                {{step.desc}}
+                            </p>
+                            <div class="btn-read-more"><a href="">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        {% endfor %}
-    
-    </div>
 
-</div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
