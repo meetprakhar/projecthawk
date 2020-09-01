@@ -1,0 +1,109 @@
+---
+layout: default
+title: Contact Us
+permalink: /contact-us/
+---
+
+<div class="container pt-100">
+    <div class="page-title-wrapper">
+        <h1 class="page-title">
+            <span itemprop="name">
+                <span class="base" data-ui-id="page-title-wrapper">Contact Us</span> </span>
+        </h1>
+    </div>
+
+    <div class="page messages">
+        <div data-placeholder="messages"></div>
+        <div data-bind="scope: 'messages'">
+            <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
+            <!-- /ko -->
+            <!-- ko if: messages().messages && messages().messages.length > 0 -->
+            <!-- /ko -->
+        </div>
+
+    </div>
+    <div class="columns">
+        <div class="column main">
+            <div class="zoo-main-content-area"><input name="form_key" type="hidden" value="KOhBjzGtqBoHTcMV">
+                <div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+
+                    <!-- ko template: getTemplate() -->
+
+
+                    <!-- /ko -->
+
+                </div>
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-6 text_column">
+                                    <h3>Let’s Talk Together</h3>
+                                    <p style="margin-bottom: 10px">EFG Store 63, 2nd Floor, Municipal Industrial
+                                        Estate,<br> Gandhinagar, Behid St. Regis Hotel,<br> Opp Marshalls Wallpaper,
+                                        Upper Worli, Mumbai- 400018</p>
+                                    <p>You already know what we do. Now all you have to do is get in touch<br> with
+                                        us. Give us a call, shoot us an email, or drop in for some<br> wonderfully
+                                        brewed coffee.</p>
+                                </div>
+                                <div class="col-sm-6 contact-maps padding-left-60">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 ">
+                            <h3>Send A Message</h3>
+                            <form class="contact-form" action="https://efgstore.in/contact/index/post/"
+                                id="contact-form" method="post" data-hasrequired="* Required Fields"
+                                novalidate="novalidate">
+
+                                <p><input name="name" id="name" title="Name" placeholder="Name" value=""
+                                        class="input-text" type="text" data-validate="{required:true}"></p>
+                                <p><input name="email" id="email" title="Email" placeholder="Email" value=""
+                                        class="input-text" type="email"
+                                        data-validate="{required:true, 'validate-email':true}"></p>
+                                <p><input name="telephone" data-validate="{'validate-number':true , required:true}"
+                                        id="telephone" title="Phone Number" placeholder="Phone Number" value=""
+                                        class="input-text" type="text"></p>
+                                <p><textarea name="comment" id="comment" title="What’s on your mind?"
+                                        placeholder="What’s on your mind?" class="input-text" cols="5" rows="3"
+                                        data-validate="{required:true}"></textarea></p>
+                                <div class="field captcha required" role="contact_us">
+                                    <label for="captcha_contact_us" class="label"><span>Please type the letters and
+                                            numbers below</span></label>
+                                    <div class="control captcha">
+                                        <input name="captcha[contact_us]" type="text" class="input-text required-entry"
+                                            data-validate="{required:true}" id="captcha_contact_us" autocomplete="off"
+                                            aria-required="true">
+                                        <div class="nested">
+                                            <div class="field captcha no-label" data-captcha="contact_us"
+                                                id="captcha-container-contact_us">
+                                                <div class="control captcha-image">
+                                                    <img alt="Please type the letters and numbers below"
+                                                        class="captcha-img" height="50"
+                                                        src="https://efgstore.in/media/captcha/base/abdc2ae1fc50051be003d390775cb494.png">
+                                                    <button type="button" class="action reload captcha-reload"
+                                                        title="Reload captcha"><span>Reload captcha</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <input type="hidden" name="hideit" id="hideit" value="">
+                                    <button type="submit" title="Submit" class="btn-novetty btn-raised primary">
+                                        <span>Submit</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 padding-left-60 hidden-xs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
