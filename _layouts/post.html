@@ -21,7 +21,7 @@ layout: default
           {% if page.tags.size >= 1 %}
           <div class="post__tags">
             {% for tag in page.tags %}
-              <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tags-tag">{{ tag }}</a>
+              <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tags-tag" style="margin-left: 10px;">{{ tag }}</a>
             {% endfor %}
           </div>
           {% endif %}
@@ -121,5 +121,7 @@ layout: default
     {% endif %}
   </div>
 
-  {% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+  {% if site.data.settings.disqus-identifier %} 
+  {% include disqus-comments.html %} 
+  {% endif %}
   </div>

@@ -31,6 +31,9 @@
     3.9 Footer
     3.10 OurTeam
     3.11 SimpleSteps
+    3.12 contact us
+    3.13 timeline
+    3.14 forms
 
 :: 4-Layouts
     4.1 Page-home
@@ -115,7 +118,14 @@ $baseurl:"{{site.baseurl}}";
 // 3.11 SimpleSteps
 @import '3-modules/simplesteps';
 
+// 3.12 Contact Us
 @import '3-modules/contactUs';
+
+// 3.13 Timeline
+@import '3-modules/timeline';
+
+// 3.14 Forms
+@import '3-modules/forms';
 
 /* >>>>>>>>>>>>>> :: 4-Layouts <<<<<<<<<<<<<<< */
 

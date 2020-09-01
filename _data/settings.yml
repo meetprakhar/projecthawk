@@ -3,6 +3,8 @@
 title: Zolan
 logo: logo.svg # You can add own logo.
 description: Zolan is modern minimal theme for Jekyll
+author:
+  name: Prakhar Kumar
 
 #-------------------------------
 # contact Us Settings
@@ -59,7 +61,7 @@ simplesteps:
 # Team Details
 team:
   - name: Kay Garland
-    pic: team_mambers/01.jpg
+    pic: team_members/01.jpg
     position: Lead Designer
     social:
       - title: linkedin
@@ -70,7 +72,7 @@ team:
         url: #
 
   - name: Kay Garland
-    pic: team_mambers/01.jpg
+    pic: team_members/01.jpg
     position: Lead Designer
     social:
       - title: twitter-square
@@ -80,7 +82,7 @@ team:
       - title: stack-overflow
         url: #
   - name: Kay Garland
-    pic: team_mambers/01.jpg
+    pic: team_members/01.jpg
     position: Lead Designer
     social:
       - title: twitter
@@ -91,8 +93,30 @@ team:
         url: #
 
 
+#-------------------------------
+# WorkFlow Settings
 
-     
+workflow:
+  intro: 'Personal Care to each Request!'
+  flow_end: 'BE PART<br/>OF OUR<br/>STORY!'
+  timelinedata:
+    - img: team_members/01.jpg
+      head1: 'Test Head'
+      head2: 'heading 1'
+      subhead: '1017-18'
+      desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
+    - img: team_members/01.jpg
+      head1: 'Test Head 2'
+      head2: 'heading 1'
+      subhead: '1017-18'
+      desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
+    - img: team_members/01.jpg
+      head1: 'Test Head 3'
+      head2: 'heading 1'
+      subhead: '1017-18'
+      desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
+
+
 
 #-------------------------------
 # Contact links
