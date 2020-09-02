@@ -1,0 +1,54 @@
+---
+layout: page
+title: Test Recaptcha
+permalink: /capchaTest/
+---
+
+<script src="https://www.google.com/recaptcha/api.js?render={{ site.data.settings.captchaSiteKey }}"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function onClick(e) {
+      e.preventDefault();
+    }
+
+    grecaptcha.ready(function() {
+        grecaptcha.execute('{{ site.data.settings.captchaSiteKey }}', {action: 'submit'}).then(function(token) {
+            // Add your logic to submit to your backend server here.
+            console.log(token)
+            document.getElementById('g-recaptcha-response').value = token;
+
+            const url='https://www.google.com/recaptcha/api/siteverify';
+
+            $.post(url,
+                {
+                secret: "{{ site.data.settings.captchaSecretKey }}",
+                response: token
+                },
+                function(data,status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+
+            /*
+            const Http = new XMLHttpRequest();
+            Http.open("POST", url);
+            Http.setRequestHeader("Access-Control-Allow-Origin","*");
+            Http.send();
+
+            Http.onreadystatechange = (e) => {
+            console.log(Http.responseText)
+            }
+            */
+            
+        });
+      });
+</script>
+
+<form action="/" method="POST">
+    <input type="text" name="name" /> <br />
+    <input type="text" name="g-recaptcha-response" id="g-recaptcha-response" /> <br />
+    <input type="submit" value="submit" />
+    
+</form>
+
+<!-- ?secret="{{ site.data.settings.captchaSecretKey }}"&response="'+token+'" -->
