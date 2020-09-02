@@ -176,8 +176,3 @@ google-analytics: # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Newsletter
 mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-#-------------------------------
-  # RecaptchaV3 Site Key
-captchaSiteKey: 6Lcw0cYZAAAAADkhYIjYuou44lR09akqm4LjAn-J
-captchaSecretKey: 6Lcw0cYZAAAAAPpJVwN1l9i5P0vVvoLp-SBxPr5V
