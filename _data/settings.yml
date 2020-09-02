@@ -31,17 +31,17 @@ intro:
 #-------------------------------
 # Three Simple Steps
 simplesteps:
-  - image: 02.png
+  - image: 02.jpg
     alt: 'A'
     title: Where there's a will, there's <Strong><a href="#">Axotico!</a></strong>
     desc: We are a team of passionate and trained professionals who understands your hurdles and offer you the best, wisely curated solution chosen through deliberation. We are the world's first and only company to solve problems in multiple domains by applying disruptive thinking to problems by embarking on a revolutionary path for innovation.
   
-  - image: 02.png
+  - image: 02.jpg
     alt: 'B'
     title: <strong><a>Hassle-Free</a></strong> solutions
     desc: 'Here at Axotico we animate your initiative by embracing your ideas while offering insights and provide you with customized products at your comfort. We deal with an endless range of products encompassing sectors like housing, industries, hotels, restaurants, and so on.'
   
-  - image: 02.png
+  - image: 02.jpg
     alt: 'C'
     title: <strong><a>Magic</a></strong> at your doorstep
     desc: 'We bring you the best and convenient solution at your doorstep all over India. <br /> So order now in single or bulk quantities and be assured to have a hassle-free experience delivered at the comfort of your own home.'
