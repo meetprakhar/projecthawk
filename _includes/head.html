@@ -15,7 +15,10 @@
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
 
-  <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/favicon.png">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.css">
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
   <style>
     {% capture include_to_scssify %}  
@@ -24,9 +27,12 @@
     {{ include_to_scssify | scssify }}
   </style>
     
+    <!--{% comment %}
   <style>
-    {% include css/row_col_bootstrap.css %}
+    {% include css/bootstrap_grid.css %}
   </style>
 
 <TODO: "CHANE ICON LIB"></TODO:>
 </head>
+
+{% endcomment %}-->
