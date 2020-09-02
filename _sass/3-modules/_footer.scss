@@ -155,13 +155,21 @@
 	color: $brand-color;
 }
 
-.footer-widget ul li{
+.footer-widget .dual_col{
 	display: inline-block;
 	margin-left: 0px;
+	margin-bottom: 12px;
+	list-style-type: none;
 	float: left;
 	width: 50%;
-	margin-bottom: 12px;
 }
+
+.footer-widget .single_col{
+	margin-left: 0px;
+	margin-bottom: 12px;
+	list-style-type: none;
+}
+
 .footer-widget ul li a:hover{
 	color: $brand-color;
 }

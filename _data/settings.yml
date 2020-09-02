@@ -116,6 +116,35 @@ workflow:
       subhead: '1017-18'
       desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
 
+#-------------------------------
+# Footer Settings
+# useful_links_cols can have value as 1 or 2
+
+footer:
+  logo_href: '#'
+  desc: 'Company vision Here'
+  contacts:
+    - icon: map
+      head: Find Us
+      details: 'Address'
+    - icon: phone
+      head: Call Us
+      details: '+91-9876543210'
+    - icon: envelope-open
+      head: Mail Us
+      details: 'mailus@example.com'
+  social:
+      - icon: twitter twitter-bg
+        url: #
+      - icon: facebook facebook-bg
+        url: #
+  useful_links_cols: 2
+  useful_links:
+    - name: 'ONE'
+      link: #
+    - name: 'TWO'
+      link: #
+  subscribe_desc: 'Don’t miss to subscribe to our new feeds, kindly fill the form below.'
 
 
 #-------------------------------
