@@ -6,106 +6,26 @@ permalink: /faq/
 
 
 <link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/faq_style.css">
 
 <script>
-    function showSection(id){
-    $(".faq-item").hide();
-    $("#"+id+"_info").show();
-}
+    function showSection(){
+        var url = window.location.href;
+        var start = url.substr(url.indexOf("#"));
+        $(start).show();
+        location.hash = start;
+    //$(".faq-item").hide();
+    //$("#"+id).show();
+    }
+    window.onload = showSection;
+    window.addEventListener("hashchange", showSection);
+
 </script>
 
-<style>
-    .faqsection{
-        padding: 5%;
-        }
+
+<section class="pt-100 pb-100">
     
-    @media (max-width: 768px){
-        .faq-category .faq-category-nav {
-        margin-bottom: 30px;
-        }
-    }
-
-    p, a, li, blockquote, label {
-        font-size: 16px;
-        letter-spacing: 0;
-        line-height: 25px;
-        color: #808080;
-        margin-bottom: 0;
-    }
-    .faq-category .faq-category-nav {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 15px;
-        background: #fafafa;
-        padding: 30px 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .faq-category .block {
-    background: #fff;
-    padding: 40px 50px;
-    }
-
-    .faq .block .faq-item .item .item-link {
-    position: relative;
-    padding: 10px 0 10px 18px;
-}
-
-.faq .block .faq-item .item .accordion-block p {
-    padding: 20px;
-}
-
-.faq .block .faq-item .faq-item-title h2 {
-    font-size: 30px;
-    border-bottom: 1px solid #cccccc;
-}
-
-.faq .block .faq-item .item .item-link:before {
-    font-family: FontAwesome;
-    content: "\f107";
-    position: absolute;
-    left: 0;
-    font-weight: 600;
-}
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-
-a:hover {
-    text-decoration: none;
-    color: goldenrod;
-}
-
-.faq .block .faq-item .faq-item-title {
-    margin-bottom: 30px;
-}
-
-p, a, li, blockquote, label {
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 25px;
-    color: #808080;
-    margin-bottom: 0;
-}
-
-.faq-category .faq-category-nav ul li {
-    list-style: none;
-    cursor: pointer;
-}
-
-.faq .block .faq-item .item .accordion-block {
-    background: #fafafa;
-    margin-left: 18px;
-}
-</style>
-
-<section id="faq">
-    <section class="faqsection page-title">
+    <section class="faqsection page-title" onhashchange="showSection()">
         <div class="row">
             <div class="col-sm-8 m-auto">
                 <!-- Page Title -->
@@ -115,6 +35,7 @@ p, a, li, blockquote, label {
             </div>
         </div>
     </section>
+
     <section class="faq-category faq faqsection pt-0">
         <div class="row">
                 <!--
@@ -128,6 +49,7 @@ p, a, li, blockquote, label {
                     </nav>
                 </div>
                 -->
+
                 <div class="col-lg-9 m-auto">
                     
                     {% for faqtopic in site.data.faq.faqdata %}
@@ -171,4 +93,50 @@ p, a, li, blockquote, label {
                 </div>
         </div>    
     </section>
+
+    <section id="FAQ Form">
+        <div class="container">
+            <hr class="mb-30 mt-20">
+            <h3 class="pb-30">Send A Message</h3>
+            
+            <!--Add Quote Form Here-->
+            <form class="contact-form" action="SITEcontact/index/post/" id="contact-form" method="post"
+                data-hasrequired="* Required Fields" novalidate="novalidate">
+            
+                <p><input name="name" id="name" title="Name" placeholder="Name" value="" class="input-text" type="text"
+                        data-validate="{required:true}"></p>
+                <p><input name="email" id="email" title="Email" placeholder="Email" value="" class="input-text" type="email"
+                        data-validate="{required:true, 'validate-email':true}"></p>
+                <p><input name="telephone" data-validate="{'validate-number':true , required:true}" id="telephone"
+                        title="Phone Number" placeholder="Phone Number" value="" class="input-text" type="text"></p>
+                <p><textarea name="comment" id="comment" title="What’s on your mind?" placeholder="What’s on your mind?"
+                        class="input-text" cols="5" rows="3" data-validate="{required:true}"></textarea></p>
+                <div class="field captcha required" role="contact_us">
+                    <label for="captcha_contact_us" class="label"><span>Please type the letters and
+                            numbers below</span></label>
+                    <div class="control captcha">
+                        <input name="captcha[contact_us]" type="text" class="input-text required-entry"
+                            data-validate="{required:true}" id="captcha_contact_us" autocomplete="off" aria-required="true">
+                        <div class="nested">
+                            <div class="field captcha no-label" data-captcha="contact_us" id="captcha-container-contact_us">
+                                <div class="control captcha-image">
+                                    <img alt="Please type the letters and numbers below" class="captcha-img" height="50"
+                                        src="SITEmedia/captcha/base/abdc2ae1fc50011be003d390775cb494.png">
+                                    <button type="button" class="action reload captcha-reload" title="Reload captcha"><span>Reload
+                                            captcha</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="form-actions">
+                    <button type="submit" title="Submit" class="btn-xl">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
 </section>

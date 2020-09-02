@@ -14,15 +14,15 @@ intro:
   say-hello: Couldn't find it Anywhere?
   bio:  'At Axotico we build upon your imagination to bring your ideas to life. We fabricate ideas proposed by you into products to make your life hassle-free and to transform your dreams into reality, delivered right at your doorstep.'
   slideshow:
-    - img: intro/01.jpg
+    - img: intro/a1.jpg
       alt: 'one'
       title: title1
       cap: caption 1
-    - img: intro/01.jpg
+    - img: intro/a1.jpg
       alt: two
       title: title2
       cap: caption 2  
-    - img: intro/01.jpg
+    - img: intro/a1.jpg
       alt: three
       title: title3
       cap: caption 3
@@ -31,17 +31,17 @@ intro:
 #-------------------------------
 # Three Simple Steps
 simplesteps:
-  - image: 02.jpg
+  - image: 02.png
     alt: 'A'
     title: Where there's a will, there's <Strong><a href="#">Axotico!</a></strong>
     desc: We are a team of passionate and trained professionals who understands your hurdles and offer you the best, wisely curated solution chosen through deliberation. We are the world's first and only company to solve problems in multiple domains by applying disruptive thinking to problems by embarking on a revolutionary path for innovation.
   
-  - image: 02.jpg
+  - image: 02.png
     alt: 'B'
     title: <strong><a>Hassle-Free</a></strong> solutions
     desc: 'Here at Axotico we animate your initiative by embracing your ideas while offering insights and provide you with customized products at your comfort. We deal with an endless range of products encompassing sectors like housing, industries, hotels, restaurants, and so on.'
   
-  - image: 02.jpg
+  - image: 02.png
     alt: 'C'
     title: <strong><a>Magic</a></strong> at your doorstep
     desc: 'We bring you the best and convenient solution at your doorstep all over India. <br /> So order now in single or bulk quantities and be assured to have a hassle-free experience delivered at the comfort of your own home.'
@@ -101,17 +101,17 @@ workflow:
   intro: 'Personal Care to each Request!'
   flow_end: 'BE PART<br/>OF OUR<br/>STORY!'
   timelinedata:
-    - img: team_members/01.jpg
+    - img: team_members/02.jpg
       head1: 'Test Head'
       head2: 'heading 1'
       subhead: '1017-18'
       desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
-    - img: team_members/01.jpg
+    - img: team_members/02.jpg
       head1: 'Test Head 2'
       head2: 'heading 1'
       subhead: '1017-18'
       desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
-    - img: team_members/01.jpg
+    - img: team_members/02.jpg
       head1: 'Test Head 3'
       head2: 'heading 1'
       subhead: '1017-18'

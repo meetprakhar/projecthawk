@@ -3,7 +3,7 @@
 faqdata:
   - topic:
     name: General
-    questions:
+    questions: 
       - id: 1
         ques: Question 1
         ans: This is answer one.

@@ -1,0 +1,90 @@
+input {
+    margin-bottom: 20px;
+}
+.faqsection{
+    padding: 5%;
+    }
+
+@media (max-width: 768px){
+    .faq-category .faq-category-nav {
+    margin-bottom: 30px;
+    }
+}
+
+p, a, li, blockquote, label {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+    color: #808080;
+    margin-bottom: 0;
+}
+.faq-category .faq-category-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    background: #fafafa;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.faq-category .block {
+background: #fff;
+padding: 40px 50px;
+}
+
+.faq .block .faq-item .item .item-link {
+position: relative;
+padding: 10px 0 10px 18px;
+}
+
+.faq .block .faq-item .item .accordion-block p {
+    padding: 20px;
+}
+
+.faq .block .faq-item .faq-item-title h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.faq .block .faq-item .item .item-link:before {
+    font-family: FontAwesome;
+    content: "\f107";
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.faq .block .faq-item .faq-item-title {
+    margin-bottom: 30px;
+}
+
+p, a, li, blockquote, label {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+    color: #808080;
+    margin-bottom: 0;
+}
+
+.faq-category .faq-category-nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.faq .block .faq-item .item .accordion-block {
+    background: #fafafa;
+    margin-left: 18px;
+}

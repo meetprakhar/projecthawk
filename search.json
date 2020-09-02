@@ -9,6 +9,27 @@ layout: null
       "tags"     : "{{ post.tags | array_to_sentence_string }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date | date: "%-d %b, %Y" }}"
-    } {% unless forloop.last %},{% endunless %}
+    }{% unless forloop.last %},{% endunless %}
+
   {% endfor %}
+
+  {% if site.data.faq.faqdata.size > 0 %},
+
+    {% for category in site.data.faq.faqdata %}
+        {% for doubt in category.questions %}
+
+        {
+          "title"    : "{{ doubt.ques | escape }}",
+          "category" : "FAQ",
+          "tags"     : "{{category.name | escape}},{{ doubt.ans | escape }}",
+          "url"      : "{{site.baseurl}}/faq/#{{category.name | escape}}_{{doubt.id | escape}}",
+          "date"     : " "
+        }{% unless forloop.last %},{% endunless %}
+
+      {% endfor %}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+
+  {% endif %}
 ]
+ 
