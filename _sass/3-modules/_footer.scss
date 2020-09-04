@@ -3,7 +3,7 @@
   padding: 80px 0 40px;
   text-align: center;
   border-top: 1px solid $light-gray;
-  background: #f5f5f5;
+  background: black;
 
   .contact {
     margin-bottom: 15px;
@@ -16,6 +16,10 @@
         color: $brand-color;
       }
     }
+  }
+
+  .left-list{
+	  color: white;
   }
 
   @media only screen and (max-width: $mobile) {
@@ -34,7 +38,7 @@
   
 }
 .single-cta i {
-	color: $black;
+	color: white;
 	font-size: 30px;
 	float: left;
 	margin-top: 8px;
@@ -50,7 +54,7 @@
 	margin-bottom: 2px;
 }
 .cta-text span {
-	color: $black;
+	color: white;
 	font-size: 15px;
 }
 .footer-content {
@@ -72,9 +76,10 @@
 	margin-bottom: 14px;
 	font-size: 14px;
 	line-height: 28px;
+	color: white;
 }
 .footer-social-icon span {
-	color: $heading-font-color;
+	color: white;
 	display: block;
 	font-size: 20px;
 	font-weight: 700;
@@ -103,7 +108,7 @@
 	background: #DD4B39;
 }
 .footer-widget-heading h3 {
-	color: $heading-font-color;
+	color: white;
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 40px;
@@ -143,7 +148,7 @@
 	transform: rotate(-6deg);
 }
 .copyright-area{
-	background: #fff;
+	color: white;
 	padding: 25px 0;
 }
 .copyright-text p {
@@ -161,6 +166,7 @@
 	margin-bottom: 12px;
 	list-style-type: none;
 	float: left;
+	font-weight: bold;
 	width: 50%;
 }
 
@@ -168,6 +174,7 @@
 	margin-left: 0px;
 	margin-bottom: 12px;
 	list-style-type: none;
+	font-weight: bold;
 }
 
 .footer-widget ul li a:hover{

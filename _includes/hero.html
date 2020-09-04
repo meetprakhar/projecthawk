@@ -1,5 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
 <!-- begin c-hero -->
 <section id="hero">
 <div class="hero">
@@ -9,8 +11,8 @@
     
       <div class="content_h">
         <div class="hero__content">
-          <h1 class="hero__title">{{ site.data.settings.intro.say-hello }}</h1>
-          <p class="hero__subtitle">{{ site.data.settings.intro.bio }}</p>
+          <h1 class="hero__title" style="margin-bottom: 10px; font-size: 60px;">{{ site.data.settings.intro.say-hello }}</h1>
+          <p class="hero__subtitle" style="font-size: 21.5px; text-align: left;">{{ site.data.settings.intro.bio }}</p>
         </div>
       </div>
       <div class="image_h">
@@ -19,12 +21,12 @@
           <div id="hero_carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
     
             <!-- Indicators -->
-            <ul class="carousel-indicators">
+            <ul class="carousel-indicators" >
               {% for slide in site.data.settings.intro.slideshow %}
                 {% if forloop.index == 1 %}
-                  <li data-target="#hero_carousel" data-slide-to="{{forloop.index | minus: 1}}" class="active"></li>
+                  <li data-target="#hero_carousel" data-slide-to="{{forloop.index | minus: 1}}" class="active" style="background-color: darkslategray;"></li>
                 {% else %}
-                  <li data-target="#hero_carousel" data-slide-to="{{forloop.index | minus: 1}}"></li>
+                  <li data-target="#hero_carousel" data-slide-to="{{forloop.index | minus: 1}}" style="background-color: darkslategray;"></li>
                 {% endif %}
               {% endfor %}
             </ul>
@@ -35,7 +37,7 @@
                 {% if forloop.index == 1 %}
                   <div class="carousel-item active">
                     <img src="{{site.baseurl}}/images/{{slide.img}}" alt="{{slide.alt}}">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" style="color: black;">
                       <h3>{{slide.title}}</h3>
                       <p>{{slide.cap}}</p>
                     </div>
@@ -43,7 +45,7 @@
                 {% else %}
                   <div class="carousel-item">
                     <img src="{{site.baseurl}}/images/{{slide.img}}" alt="{{slide.alt}}">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" style="color: black;">
                       <h3>{{slide.title}}</h3>
                       <p>{{slide.cap}}</p>
                     </div>
@@ -53,10 +55,10 @@
 
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#hero_carousel" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+              <i class="fa fa-2x fa-angle-left" style="color: black;"></i>
             </a>
             <a class="carousel-control-next" href="#hero_carousel" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
+              <i class="fa fa-2x fa-angle-right" style="color: black;"></i>
             </a>
     
           </div>

@@ -1,125 +1,137 @@
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
 <!-- begin footer -->
 <footer class="footer">
-  <div class="container" style="text-align: left;">
-    <div class="footer-cta pt-80 pb-20">
-        
-        <div class="row">
+    <div class="container" style="text-align: left;">
+        <div class="footer-cta pt-80 pb-20">
 
-            {% for cntat in site.data.settings.footer.contacts %}
+            <div class="row">
 
-            <div class="col-xl-4 col-md-4 mb-30">
-                <div class="single-cta">
-                    <i class="fa fa-{{cntat.icon}}"></i>
-                    <div class="cta-text">
-                        <h4>{{cntat.head}}</h4>
-                        <span>{{cntat.details}}</span>
+                {% for cntat in site.data.settings.footer.contacts %}
+
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fa fa-{{cntat.icon}}"></i>
+                        <div class="cta-text">
+                            <h4>{{cntat.head}}</h4>
+                            <span>{{cntat.details}}</span>
+                        </div>
                     </div>
                 </div>
+
+                {% endfor %}
+
             </div>
-            
-            {% endfor %}
-
         </div>
-    </div>
 
-    <div class="footer-content pt-50 pb-30">
-        <div class="footer-pattern">
-            <img src="{{ site.baseurl }}/images/site_images/footer_map.png" alt="" style=" opacity: 0.06;">
-        </div>
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 mb-50">
-                <div class="footer-widget">
-                    <div class="footer-logo">
+        <div class="footer-content pt-50 pb-30">
+            <div class="footer-pattern">
+                <img src="{{ site.baseurl }}/images/site_images/footer_map_white.png" alt="" style="opacity: 0.2;">
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
 
-                        <a href="{{ site.data.settings.footer.logo_href }}"><img src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}" class="img-fluid"></a>
-                    
-                    </div>
-                    <div class="footer-text">
-                        <p>
-                            {{ site.data.settings.footer.desc }}
-                        </p>
-                    </div>
-                    <div class="footer-social-icon">
+                            <a href="{{ site.data.settings.footer.logo_href }}"><img
+                                    src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}"
+                                    alt="{{ site.data.settings.title }}" class="img-fluid"></a>
 
-                        {% if site.data.settings.footer.social.size > 0 %}
-                        <span>Follow us</span>
+                        </div>
+                        <div class="footer-text">
+                            <p>
+                                {{ site.data.settings.footer.desc }}
+                            </p>
+                        </div>
+                        <div class="footer-social-icon">
 
-                        {% for social in site.data.settings.footer.social %}
-                        <a href="{{ social.url }}"><i class="fa fa-{{ social.icon }}"></i>
-                        </a>
-                        {% endfor %}
+                            {% if site.data.settings.footer.social.size > 0 %}
+                            <span>Follow us</span>
 
-                        {% endif %}
-                        
+                            {% for social in site.data.settings.footer.social %}
+                            <a href="{{ social.url }}"><i class="fa fa-{{ social.icon }}"></i>
+                            </a>
+                            {% endfor %}
+
+                            {% endif %}
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                <div class="footer-widget">
-                    <div class="footer-widget-heading">
-                        <h3>Useful Links</h3>
-                    </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
 
-                    {% if site.data.settings.footer.useful_links_cols == 1 %}
+                        {% if site.data.settings.footer.useful_links_cols == 1 %}
                         <ul class="left-list single_col">
                             {% for refer in site.data.settings.footer.useful_links %}
-                                <li class="single_col"><a href="{{refer.link}}">{{refer.name}}</a></li>
+                            <li class="single_col"><a href="{{refer.link}}">{{refer.name}}</a></li>
                             {% endfor %}
                         </ul>
-                    {% else %}
-                    <ul class="left-list dual_col">
-                        {% for refer in site.data.settings.footer.useful_links %}
+                        {% else %}
+                        <ul class="left-list dual_col">
+                            {% for refer in site.data.settings.footer.useful_links %}
                             <li class="dual_col"><a href="{{refer.link}}">{{refer.name}}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
 
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                <div class="footer-widget">
-                    <div class="footer-widget-heading">
-                        <h3>Subscribe</h3>
-                    </div>
-                    <div class="footer-text mb-25">
-                        <p>{{site.data.settings.footer.subscribe_desc}}</p>
-                    </div>
-
-                    <div id="mc_embed_signup" class="subscribe-form">
-
-                        <form action="https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-                        
-                        <div id="mc_embed_signup_scroll">
-                        
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
-                        
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_307862c135e4548eecf86f389_342411fb35" tabindex="-1" value=""></div>
-                        
-                        <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-send"></i></button></div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
                         </div>
-                        
-                        </form>
+                        <div class="footer-text mb-25">
+                            <p>{{site.data.settings.footer.subscribe_desc}}</p>
                         </div>
+
+                        <div id="mc_embed_signup" class="subscribe-form">
+
+                            <form id="subscribe-form" name="subscribe-form" class="validate">
+
+                                <div id="mc_embed_signup_scroll">
+
+                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                        placeholder="email address" required="" style="color: black;">
+
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                                            type="text" name="b_307862c135e4548eecf86f389_342411fb35" tabindex="-1"
+                                            value=""></div>
+
+                                    <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                            class="button" style="border-radius: 0px 6px 6px 0px;"><i class="fa fa-send"></i></button></div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="copyright-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-            <span class="copyright">Copyright &copy; {{ site.data.settings.title }} {{ 'now' | date: "%Y" }}</span>
-        </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.data.settings.title }}
+                        {{ 'now' | date: "%Y" }}</span>
+                </div>
 
-        <div class="col-md-4">
-            <!--Made with  <span style="color: #e25555; font-size: x-large;">&#10084;</span>  by Prakhar Kumar-->
-            Made with <span style="color: #e25555;"><i class="fa fa-heart" aria-hidden="true"></i></span> by Our Team
+                <div class="col-md-4">
+                    <!--Made with  <span style="color: #e25555; font-size: x-large;">&#10084;</span>  by Prakhar Kumar-->
+                    Made with <span style="color: #e25555;"><i class="fa fa-heart" aria-hidden="true"></i></span> by Our
+                    Team
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+</footer>
 
 <!--{% comment % }
   <div class="container">

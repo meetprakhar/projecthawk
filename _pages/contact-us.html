@@ -4,6 +4,9 @@ title: Contact Us
 permalink: /contact-us/
 ---
 
+
+<link rel="stylesheet" href="{{site.baseurl}}/css/contact_me.css">
+
 <style>
 
     .justify-center-content{
@@ -60,48 +63,26 @@ permalink: /contact-us/
         <div class="col-sm-6">
                 <h3>Send A Message</h3>
 
-                <form class="contact-form margins_add" action="SITEcontact/index/post/"
-                    id="contact-form" method="post" data-hasrequired="* Required Fields"
-                    novalidate="novalidate">
-
-                    <p><input name="name" id="name" title="Name" placeholder="Name" value=""
-                            class="input-text" type="text" data-validate="{required:true}"></p>
-                    <p><input name="email" id="email" title="Email" placeholder="Email" value=""
-                            class="input-text" type="email"
-                            data-validate="{required:true, 'validate-email':true}"></p>
-                    <p><input name="telephone" data-validate="{'validate-number':true , required:true}"
-                            id="telephone" title="Phone Number" placeholder="Phone Number" value=""
-                            class="input-text" type="text"></p>
-                    <p><textarea name="comment" id="comment" title="What’s on your mind?"
-                            placeholder="What’s on your mind?" class="input-text" cols="5" rows="3"
-                            data-validate="{required:true}"></textarea></p>
-                    <div class="field captcha required" role="contact_us">
-                        <label for="captcha_contact_us" class="label"><span>Please type the letters and
-                                numbers below</span></label>
-                        <div class="control captcha">
-                            <input name="captcha[contact_us]" type="text" class="input-text required-entry"
-                                data-validate="{required:true}" id="captcha_contact_us" autocomplete="off"
-                                aria-required="true">
-                            <div class="nested">
-                                <div class="field captcha no-label" data-captcha="contact_us"
-                                    id="captcha-container-contact_us">
-                                    <div class="control captcha-image">
-                                        <img alt="Please type the letters and numbers below"
-                                            class="captcha-img" height="50"
-                                            src="SITEmedia/captcha/base/abdc2ae1fc50011be003d390775cb494.png">
-                                        <button type="button" class="action reload captcha-reload"
-                                            title="Reload captcha"><span>Reload captcha</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="submit" title="Submit" class="btn-xl">
+                <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    
+                <form id="contactForm_contact_us" class="contact-form"></form>
+    
+                    <input type="text" name="name" id="name" placeholder="{{site.data.settings.formhold.name}}" required>
+                    <input type="email" name="email" id="email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
+                    <input type="tel" name="phone" id="phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
+                    <textarea name="message" rows="5" id="message" placeholder="{{site.data.settings.formhold.message}}" style="margin-bottom: 20px;"></textarea>
+    
+                    <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
+                        <button type="submit" title="Submit" class="btn-xl round-edge no-edge">
                             <span>Submit</span>
                         </button>
                     </div>
+                    <div class="firebase_store_status">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>Success!</strong> Your message has been sent.    
+                    </div>
+    
                 </form>
         </div>
     </div>

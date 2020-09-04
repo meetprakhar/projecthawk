@@ -11,74 +11,74 @@ author:
 # intro Settings
 # images wiil be fetched from the image/ folder
 intro:
-  say-hello: Couldn't find it Anywhere?
-  bio:  'At Axotico we build upon your imagination to bring your ideas to life. We fabricate ideas proposed by you into products to make your life hassle-free and to transform your dreams into reality, delivered right at your doorstep.'
+  say-hello: Couldn't find it <strong><a>Anywhere?</a></strong>
+  bio:  'At Axotico we build upon <strong><a>your imagination</a></strong> to bring your ideas to life. We fabricate ideas proposed by you into <strong><a>premium products</a></strong> to make your life hassle-free and to transform your dreams into reality, delivered right at your doorstep.'
   slideshow:
-    - img: intro/a1.jpg
-      alt: 'one'
-      title: title1
-      cap: caption 1
-    - img: intro/a1.jpg
-      alt: two
-      title: title2
-      cap: caption 2  
-    - img: intro/a1.jpg
-      alt: three
-      title: title3
-      cap: caption 3
+    - img: intro/i1.png
+      alt: 'library couch'
+      title: From Household
+      cap: ''
+    - img: intro/i2.png
+      alt: industrial jigs
+      title: to Industrial
+      cap: ''  
+    - img: intro/i3.png
+      alt: websites/apps
+      title: to Software and so on...
+      cap: ''
 
 
 #-------------------------------
 # Three Simple Steps
 simplesteps:
-  - image: crow1.png
+  - image: simple_steps/crow1.png
     alt: 'A'
     title: Where there's a will, there's <Strong><a href="#">Axotico!</a></strong>
-    desc: We are a team of passionate and trained professionals who understands your hurdles and offer you the best, wisely curated solution chosen through deliberation. We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>disruptive thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path for innovation.</a></strong>
+    desc: We are a team of passionate and trained professionals who understand your hurdles and offer you the best, wisely curated solution chosen through methodical deliberation. We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>unconventional thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path towards innovation.</a></strong>
   
-  - image: crow2.png
+  - image: simple_steps/crow2.png
     alt: 'B'
     title: <strong><a>Hassle-Free</a></strong> solutions
-    desc: 'Here at Axotico we animate your initiative by embracing your ideas while offering insights and provide you with <strong><a>customized products</a></strong> at your comfort. We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, and so on</a></strong>.'
+    desc: 'Here at Axotico we animate your initiative by embracing your ideas while offering insights and provide you with <strong><a>customized products</a></strong> at your comfort. We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, technology and so on</a></strong>.'
   
-  - image: crow3.png
+  - image: simple_steps/crow3.png
     alt: 'C'
     title: '<strong><a>Magic</a></strong> at your doorstep'
-    desc: 'We bring you the <strong><a>best and convenient</a></strong> solution at your doorstep all over India. <br /> So order now in <strong><a>single or bulk quantities</a></strong> and be assured to have a hassle-free experience delivered at the comfort of your own home.'
+    desc: 'We bring you the <strong><a>best and most convenient</a></strong> solution at your doorstep all over India. <br /> So order now in <strong><a>single or bulk quantities</a></strong> and be assured to have a hassle-free experience delivered at the comfort of your own home.'
   
 #-------------------------------
 # Team Details
 team:
-  - name: Kay Garland
+  - name: Prakhar Kumar
     pic: team_members/01.jpg
-    position: Lead Designer
+    position: co-founder and CEO
     social:
       - title: linkedin
         url: #
-      - title: facebook
+      - title: globe
         url: #
-      - title: stack-overflow
+      - title: envelope-o
         url: #
 
-  - name: Kay Garland
+  - name: Anjali R. Pahal
     pic: team_members/01.jpg
-    position: Lead Designer
+    position: co-founder and CTO
     social:
-      - title: twitter-square
+      - title: linkedin
         url: #
-      - title: facebook
+      - title: envelope-o
         url: #
-      - title: stack-overflow
+      - title: github
         url: #
-  - name: Kay Garland
+  - name: Preksha Agarwal
     pic: team_members/01.jpg
-    position: Lead Designer
+    position: co-founder and COO 
     social:
-      - title: twitter
+      - title: linkedin
         url: #
-      - title: facebook
+      - title: instagram
         url: #
-      - title: stack-overflow
+      - title: envelope-o
         url: #
 
 #-------------------------------
@@ -102,20 +102,28 @@ workflow:
   flow_end: 'BE PART<br/>OF OUR<br/>STORY!'
   timelinedata:
     - img: team_members/02.jpg
-      head1: 'Test Head'
-      head2: 'heading 1'
-      subhead: '1017-18'
-      desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
+      head1: 'Get in touch'
+      head2: 
+      subhead: 
+      desc: 'Contact us with your problem, need or idea. <br \> One of our consultants will reach back to you. <br \> Get expert guidance to mould your idea into something real.'
+
     - img: team_members/02.jpg
-      head1: 'Test Head 2'
-      head2: 'heading 1'
-      subhead: '1017-18'
-      desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
+      head1: 'Place the order'
+      head2: 
+      subhead: 
+      desc: 'No need to wait anymore.'
+
     - img: team_members/02.jpg
-      head1: 'Test Head 3'
-      head2: 'heading 1'
-      subhead: '1017-18'
-      desc: 'Large content Here lsdifbvsdiu bbsdiu vbpsdiuvd npsdiuvnpidsuvni pdsuncpsidj cpiusdncpius dpcu sdpi c'
+      head1: 'This is where the Magic happens'
+      head2: 
+      subhead: 
+      desc: 'Skilled craftsmen diligently work to build quality products.'
+
+    - img: team_members/02.jpg
+      head1: 'Hurray! Delivered at your doorstep.'
+      head2: 
+      subhead: 
+      desc: 'Premium from Beginning to End.'
 
 #-------------------------------
 # Footer Settings
@@ -139,11 +147,17 @@ footer:
         url: #
       - icon: facebook facebook-bg
         url: #
-  useful_links_cols: 2
+  useful_links_cols: 1
   useful_links:
-    - name: 'ONE'
+    - name: 'Home'
       link: #
-    - name: 'TWO'
+    - name: 'Workflow/Billing'
+      link: #
+    - name: 'Contact Us'
+      link: #
+    - name: 'FAQs'
+      link: #
+    - name: 'Blog'
       link: #
   subscribe_desc: 'Don’t miss to subscribe to our new feeds, kindly fill the form below.'
 
@@ -186,6 +200,8 @@ formhold:
   message: "What's on your mind?"
   name: "Your Name *"
   phone: "Phone Number *"
+  faq:  "Question *"
+  phone_optional: "Phone Number"
 
 # Firebase
 firebase-keys:

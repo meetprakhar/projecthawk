@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Workflow
+title: Order
 permalink: /workflow/
 ---
 
@@ -77,55 +77,58 @@ permalink: /workflow/
 
                 </ul>
             </div>
-        </div>
 
-        <hr class="mb-30 mt-20">
-        <h3 class="pb-30">Send A Message</h3>
-
-          <!--Add Quote Form Here-->
-    <form class="contact-form" action="SITEcontact/index/post/"
-    id="contact-form" method="post" data-hasrequired="* Required Fields"
-    novalidate="novalidate">
-
-    <p><input name="name" id="name" title="Name" placeholder="Name" value=""
-            class="input-text" type="text" data-validate="{required:true}"></p>
-    <p><input name="email" id="email" title="Email" placeholder="Email" value=""
-            class="input-text" type="email"
-            data-validate="{required:true, 'validate-email':true}"></p>
-    <p><input name="telephone" data-validate="{'validate-number':true , required:true}"
-            id="telephone" title="Phone Number" placeholder="Phone Number" value=""
-            class="input-text" type="text"></p>
-    <p><textarea name="comment" id="comment" title="What’s on your mind?"
-            placeholder="What’s on your mind?" class="input-text" cols="5" rows="3"
-            data-validate="{required:true}"></textarea></p>
-    <div class="field captcha required" role="contact_us">
-        <label for="captcha_contact_us" class="label"><span>Please type the letters and
-                numbers below</span></label>
-        <div class="control captcha">
-            <input name="captcha[contact_us]" type="text" class="input-text required-entry"
-                data-validate="{required:true}" id="captcha_contact_us" autocomplete="off"
-                aria-required="true">
-            <div class="nested">
-                <div class="field captcha no-label" data-captcha="contact_us"
-                    id="captcha-container-contact_us">
-                    <div class="control captcha-image">
-                        <img alt="Please type the letters and numbers below"
-                            class="captcha-img" height="50"
-                            src="SITEmedia/captcha/base/abdc2ae1fc50011be003d390775cb494.png">
-                        <button type="button" class="action reload captcha-reload"
-                            title="Reload captcha"><span>Reload captcha</span></button>
+            <div class="col-lg-12">
+            <hr class="mb-30 mt-20">
+            <h3 class="pb-30">Send A Message</h3>
+    
+            <!--Add Quote Form Here-->
+            <form class="contact-form" action="SITEcontact/index/post/"
+            id="contact-form" method="post" data-hasrequired="* Required Fields"
+            novalidate="novalidate">
+        
+            <p><input name="name" id="name" title="Name" placeholder="Name" value=""
+                    class="input-text" type="text" data-validate="{required:true}"></p>
+            <p><input name="email" id="email" title="Email" placeholder="Email" value=""
+                    class="input-text" type="email"
+                    data-validate="{required:true, 'validate-email':true}"></p>
+            <p><input name="telephone" data-validate="{'validate-number':true , required:true}"
+                    id="telephone" title="Phone Number" placeholder="Phone Number" value=""
+                    class="input-text" type="text"></p>
+            <p><textarea name="comment" id="comment" title="What’s on your mind?"
+                    placeholder="What’s on your mind?" class="input-text" cols="5" rows="3"
+                    data-validate="{required:true}"></textarea></p>
+            <div class="field captcha required" role="contact_us">
+                <label for="captcha_contact_us" class="label"><span>Please type the letters and
+                        numbers below</span></label>
+                <div class="control captcha">
+                    <input name="captcha[contact_us]" type="text" class="input-text required-entry"
+                        data-validate="{required:true}" id="captcha_contact_us" autocomplete="off"
+                        aria-required="true">
+                    <div class="nested">
+                        <div class="field captcha no-label" data-captcha="contact_us"
+                            id="captcha-container-contact_us">
+                            <div class="control captcha-image">
+                                <img alt="Please type the letters and numbers below"
+                                    class="captcha-img" height="50"
+                                    src="SITEmedia/captcha/base/abdc2ae1fc50011be003d390775cb494.png">
+                                <button type="button" class="action reload captcha-reload"
+                                    title="Reload captcha"><span>Reload captcha</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        
+            <div class="form-actions">
+                <button type="submit" title="Submit" class="btn-xl">
+                    <span>Submit</span>
+                </button>
+            </div>
+            </form>
+            
+            </div>
+
         </div>
-    </div>
-
-    <div class="form-actions">
-        <button type="submit" title="Submit" class="btn-xl">
-            <span>Submit</span>
-        </button>
-    </div>
-    </form>
-
     </div>
 </section>

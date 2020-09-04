@@ -1,0 +1,35 @@
+<form id="contactForm_new" class="contact-form"></form>
+
+                
+                <input type="text" name="name" id="name" placeholder="{{site.data.settings.formhold.name}}" required>
+                <input type="text" name="company" id="company" placeholder="{{site.data.settings.formhold.company}}">
+                <input type="email" name="email" id="email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
+                <input type="tel" name="phone" id="phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
+                <textarea name="message" rows="5" id="message" placeholder="{{site.data.settings.formhold.message}}" style="margin-bottom: 20px;"></textarea>
+
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat" selected>Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+                <div class="radiogrp">
+                <!-- name same then radio will in same group-->
+                <input type="radio" id="age1" name="age" value="30">
+                <label for="age1">0 - 30</label><br>
+                <input type="radio" id="age2" name="age" value="60">
+                <label for="age2">31 - 60</label><br>  
+                </div>
+
+                <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
+                    <button type="submit" title="Submit" class="btn-xl round-edge no-edge">
+                        <span>Submit</span>
+                    </button>
+                </div>
+                <div class="firebase_store_status">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>Success!</strong> Your message has been sent.    
+                </div>
+
+            </form>
