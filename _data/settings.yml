@@ -31,20 +31,20 @@ intro:
 #-------------------------------
 # Three Simple Steps
 simplesteps:
-  - image: 02.jpg
+  - image: crow1.png
     alt: 'A'
     title: Where there's a will, there's <Strong><a href="#">Axotico!</a></strong>
-    desc: We are a team of passionate and trained professionals who understands your hurdles and offer you the best, wisely curated solution chosen through deliberation. We are the world's first and only company to solve problems in multiple domains by applying disruptive thinking to problems by embarking on a revolutionary path for innovation.
+    desc: We are a team of passionate and trained professionals who understands your hurdles and offer you the best, wisely curated solution chosen through deliberation. We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>disruptive thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path for innovation.</a></strong>
   
-  - image: 02.jpg
+  - image: crow2.png
     alt: 'B'
     title: <strong><a>Hassle-Free</a></strong> solutions
-    desc: 'Here at Axotico we animate your initiative by embracing your ideas while offering insights and provide you with customized products at your comfort. We deal with an endless range of products encompassing sectors like housing, industries, hotels, restaurants, and so on.'
+    desc: 'Here at Axotico we animate your initiative by embracing your ideas while offering insights and provide you with <strong><a>customized products</a></strong> at your comfort. We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, and so on</a></strong>.'
   
-  - image: 02.jpg
+  - image: crow3.png
     alt: 'C'
-    title: <strong><a>Magic</a></strong> at your doorstep
-    desc: 'We bring you the best and convenient solution at your doorstep all over India. <br /> So order now in single or bulk quantities and be assured to have a hassle-free experience delivered at the comfort of your own home.'
+    title: '<strong><a>Magic</a></strong> at your doorstep'
+    desc: 'We bring you the <strong><a>best and convenient</a></strong> solution at your doorstep all over India. <br /> So order now in <strong><a>single or bulk quantities</a></strong> and be assured to have a hassle-free experience delivered at the comfort of your own home.'
   
 #-------------------------------
 # Team Details
@@ -176,3 +176,24 @@ google-analytics: # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Newsletter
 mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+
+#-------------------------------
+# Form Settings
+formhold: 
+  company: "Your Company *"
+  mail-id: "Your Email *"
+  message: "What's on your mind?"
+  name: "Your Name *"
+  phone: "Phone Number *"
+
+# Firebase
+firebase-keys:
+    apiKey: "AIzaSyAnQxHDqEeH1AUgzg49dJJgDoqx8zYjfTQ"
+    authDomain: "fir-contact-form-fc4aa.firebaseapp.com"
+    databaseURL: "https://fir-contact-form-fc4aa.firebaseio.com"
+    projectId: "fir-contact-form-fc4aa"
+    storageBucket: "fir-contact-form-fc4aa.appspot.com"
+    messagingSenderId: "764558957778"
+    appId: "1:764558957778:web:79cdd969d752292750a10b"
+    measurementId: "G-X3DKSH1T9Z"

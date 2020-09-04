@@ -34,6 +34,11 @@
     width: 100%;
     background: #fff;
     overflow: hidden; }
+
+    .blog-wrapper .warm{
+      -webkit-filter:sepia(40%);
+      filter:sepia(40%);
+    }
     .blog-wrapper .thumb-image:hover img {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
