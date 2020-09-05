@@ -57,81 +57,65 @@ function isNumberKey(evt){
           },4000);
 
     }
-  
-  
-  // For Contact Us form
-  
-  // Listen for form submit
-  form_ct = document.getElementById('contactForm_contact_us');
+}
 
-  if(form_ct != null){
-    form_ct.addEventListener('submit', submitContact);
-  }
+// For Contact Us form
+{ 
 
-    // Reference messages collection(the table will have mesages)
-    var contactRef = firebase.database().ref().child('contact-us');
-    
+  // Reference messages collection(the table will have mesages)
+  var contactRef = firebase.database().ref().child('contact-us');
+
+  // function to push subs
+  function submitContact(){
+
     var SuccessBoxId = 'ct-fire-success';
     var FailBoxId = 'ct-fire-fail';
-    
 
-    // function to push subs
-    function submitContact(e){
-      e.preventDefault();
+    // Get values 
+    var email = getInputVal('ct-email');
+    var name = getInputVal('ct-name');
+    var phone = getInputVal('ct-phone');
+    var msg = getInputVal('ct-message');
 
-      // Get values 
-      var email = getInputVal('ct-email');
-      var name = getInputVal('ct-name');
-      var phone = getInputVal('ct-phone');
-      var msg = getInputVal('ct-message');
+    var newcontactRef = contactRef.push();
+    newcontactRef.set({
+      name: name,
+      email:email,
+      phone: phone,
+      msg:msg
+    }, function(error){
+      if(error){
+        // Data write failed!
+        document.getElementById(FailBoxId).style.display = 'block';
+      
+      } else {
+        // Data Saved Successfully
+        document.getElementById(SuccessBoxId).style.display = 'block';
+      
+      }
+    });
 
-      var newcontactRef = contactRef.push();
-      newcontactRef.set({
-        name: name,
-        email:email,
-        phone: phone,
-        msg:msg
-      }, function(error){
-        if(error){
-          // Data write failed!
-          document.getElementById(FailBoxId).style.display = 'block';
-        
-        } else {
-          // Data Saved Successfully
-          document.getElementById(SuccessBoxId).style.display = 'block';
-        
-        }
-      });
+        // Hide firebase_store_status after 3 seconds
+        setTimeout(function(){
+          document.getElementById(SuccessBoxId).style.display = 'none';
+          document.getElementById(FailBoxId).style.display = 'none';
+        },4000);
 
-          // Hide firebase_store_status after 3 seconds
-          setTimeout(function(){
-            document.getElementById(SuccessBoxId).style.display = 'none';
-            document.getElementById(FailBoxId).style.display = 'none';
-          },4000);
-
-    }
   }
-
+}
 
 // For FAQ form
 {
-    // Listen for form submit
-    form_faq = document.getElementById('faqForm');
-
-    if(form_faq != null){
-      form_faq.addEventListener('submit', submitQuestion);
-    }
     
     // Reference messages collection(the table will have mesages)
     var FAQRef = firebase.database().ref().child('faqForm');
 
     // function to push subs
-    function submitQuestion(e){
-      e.preventDefault();
+    function submitQuestion(){
 
       var SuccessBoxId = 'faq-fire-success';
       var FailBoxId = 'faq-fire-fail';
-      
+
       // Get values 
       var email = getInputVal('faq-email');
       var name = getInputVal('faq-name');
@@ -167,10 +151,6 @@ function isNumberKey(evt){
 
 // For Request Callback
 {
-// Listen for form submit
-//form_rcb = document.getElementById('req_callback_form');
-
-//form_rcb.addEventListener('submit', submitCallback);
 
 
 // Reference messages collection(the table will have mesages)
@@ -228,23 +208,16 @@ function submitCallback(){
 
 // Order Form
 {
-// Listen for form submit
-form_ord = document.getElementById('order_Form');
-
-if(form_ord != null){
-  form_ord.addEventListener('submit', submitOrder);
-}
 
   // Reference messages collection(the table will have mesages)
-  var contactRef = firebase.database().ref().child('orders');
+  var orderRef = firebase.database().ref().child('orders');
   
   var SuccessBoxId = 'ord-fire-success';
   var FailBoxId = 'ord-fire-fail';
   
 
   // function to push subs
-  function submitOrder(e){
-    e.preventDefault();
+  function submitOrder(){
 
     // Get values 
     var email = getInputVal('ord-email');
@@ -253,8 +226,8 @@ if(form_ord != null){
     var msg = getInputVal('ord-message');
     var addr = getInputVal('ord-address');
 
-    var newcontactRef = contactRef.push();
-    newcontactRef.set({
+    var neworderRef = orderRef.push();
+    neworderRef.set({
       name: name,
       email:email,
       phone: phone,

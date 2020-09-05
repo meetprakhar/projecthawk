@@ -102,7 +102,7 @@ permalink: /faq/
             <h3 class="pb-30">Anything Else?</h3>
              
 
-            <form id="faqForm" class="contact-form" onsubmit="submitFAQ">
+            <form id="faqForm" class="contact-form">
                 
                 <input type="text" name="name" id="faq-name" placeholder="{{site.data.settings.formhold.name}}" required>
                 <input type="email" name="email" id="faq-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
@@ -110,7 +110,7 @@ permalink: /faq/
                 <textarea name="message" rows="5" id="faq-message" placeholder="{{site.data.settings.formhold.faq}}" style="margin-bottom: 20px;" required></textarea>
 
                 <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
-                    <button type="submit" title="Submit" class="btn-xl round-edge no-edge">
+                    <button type="button" title="Submit" class="btn-xl round-edge no-edge" onclick="submitQuestion();">
                         <span>Submit</span>
                     </button>
                 </div>
