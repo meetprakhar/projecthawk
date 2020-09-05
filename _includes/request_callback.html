@@ -7,11 +7,25 @@
     top: 230px;
     width: 65px;
     outline: none;
-    z-index: 9;
+    z-index: 999;
 }
+.request-call_mob {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    bottom: 60px;
+    width: 45px;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
 @media only screen and (max-width: 1099px){
     .request-call {
         display: none;
+    }
+    .request-call_mob {
+        display: block;
     }
 }
 
@@ -21,7 +35,11 @@ input {
 </style>
 
 <a class="request-call" href="" data-toggle="modal" data-target="#modalContactForm">
-<img data-src="images/common/req-call.png" class="lazy2 loaded" alt="Request a call back to buy furniture" src="{{site.baseurl}}/images/site_images/req-call.png">
+  <img class="lazy2 loaded" alt="Request a call back" src="{{site.baseurl}}/images/site_images/req-call.png">
+</a>
+
+<a class="request-call_mob" href="" data-toggle="modal" data-target="#modalContactForm">
+  <img class="lazy2 loaded" alt="Request a call back" src="{{site.baseurl}}/images/site_images/req-call_mob.png">
 </a>
 
 

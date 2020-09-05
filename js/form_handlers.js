@@ -125,14 +125,13 @@ function isNumberKey(evt){
     // Reference messages collection(the table will have mesages)
     var FAQRef = firebase.database().ref().child('faqForm');
 
-    var SuccessBoxId = 'faq-fire-success';
-    var FailBoxId = 'faq-fire-fail';
-    
-
     // function to push subs
     function submitQuestion(e){
       e.preventDefault();
 
+      var SuccessBoxId = 'faq-fire-success';
+      var FailBoxId = 'faq-fire-fail';
+      
       // Get values 
       var email = getInputVal('faq-email');
       var name = getInputVal('faq-name');
@@ -177,12 +176,12 @@ function isNumberKey(evt){
 // Reference messages collection(the table will have mesages)
 var callBackRef = firebase.database().ref().child('callback-list');
 
-var SuccessBoxId = 'rcb-fire-success';
-var FailBoxId = 'rcb-fire-fail';
-
 
 // function to push subs
 function submitCallback(){
+
+  var SuccessBoxId = 'rcb-fire-success';
+  var FailBoxId = 'rcb-fire-fail';
 
   var today = new Date();
   var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -212,8 +211,9 @@ function submitCallback(){
 
     } else {
       // Data Saved Successfully
-      document.getElementById(SuccessBoxId).style.display = 'block';
       document.getElementById('req_callback_form').reset();
+
+      document.getElementById(SuccessBoxId).style.display = 'block';
 
       // Hide dialog after 4 seconds
       setTimeout(function(){

@@ -112,9 +112,9 @@ workflow:
       head2: 
       subhead: 
       desc: 'No need to wait anymore. <br />
-      <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">     
-          <a href="#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black;">
-            <span>Order Now!</span>
+      <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: left; align-items: center;">     
+          <a href="#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black; width: auto !important;">
+            <span>    Order Now!    </span>
           </a>
       </div>
       '
@@ -207,7 +207,7 @@ formhold:
   faq: "Question *"
   mail-id: "Your Email *"
   message: "What's on your mind?"
-  message-order: "What is on your mind ? <br /> Eg: I want a coffee table with an aquarium built into it. *"
+  message-order: "What is on your mind ? Eg: I want a coffee table with an aquarium built into it. *"
   name: "Your Name *"
   phone: "Phone Number *"
   phone_optional: "Phone Number"
