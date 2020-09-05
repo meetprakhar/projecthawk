@@ -51,7 +51,7 @@
     right: auto;
     left: -14px;
     border-right-width: 14px;
-    border-left-width: 0;
+    border-left-width: 0; 
 }
 
 .timeline>li .timeline-image {
@@ -66,6 +66,9 @@
     text-align: center;
     color: #fff;
     background-color: $brand-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .timeline>li .timeline-image h4 {
@@ -167,8 +170,8 @@
     }
 
     .timeline>li .timeline-image {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         margin-left: -75px;
     }
 
@@ -193,9 +196,9 @@
     }
 
     .timeline>li .timeline-image {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
+        width: 130px;
+        height: 130px;
+        margin-left: -65px;
     }
 
     .timeline>li .timeline-image h4 {

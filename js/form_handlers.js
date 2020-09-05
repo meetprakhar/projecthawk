@@ -110,7 +110,7 @@ function isNumberKey(evt){
           },4000);
 
     }
-}
+  }
 
 
 // For FAQ form
@@ -224,4 +224,59 @@ function submitCallback(){
     }
   });
 }
+}
+
+// Order Form
+{
+// Listen for form submit
+form_ord = document.getElementById('order_Form');
+
+if(form_ord != null){
+  form_ord.addEventListener('submit', submitOrder);
+}
+
+  // Reference messages collection(the table will have mesages)
+  var contactRef = firebase.database().ref().child('orders');
+  
+  var SuccessBoxId = 'ord-fire-success';
+  var FailBoxId = 'ord-fire-fail';
+  
+
+  // function to push subs
+  function submitOrder(e){
+    e.preventDefault();
+
+    // Get values 
+    var email = getInputVal('ord-email');
+    var name = getInputVal('ord-name');
+    var phone = getInputVal('ord-phone');
+    var msg = getInputVal('ord-message');
+    var addr = getInputVal('ord-address');
+
+    var newcontactRef = contactRef.push();
+    newcontactRef.set({
+      name: name,
+      email:email,
+      phone: phone,
+      address:addr,
+      msg:msg
+    }, function(error){
+      if(error){
+        // Data write failed!
+        document.getElementById(FailBoxId).style.display = 'block';
+      
+      } else {
+        // Data Saved Successfully
+        document.getElementById(SuccessBoxId).style.display = 'block';
+        document.getElementById('order_Form').reset();
+      }
+    });
+
+        // Hide firebase_store_status after 3 seconds
+        setTimeout(function(){
+          document.getElementById(SuccessBoxId).style.display = 'none';
+          document.getElementById(FailBoxId).style.display = 'none';
+        },4000);
+
+  }
 }

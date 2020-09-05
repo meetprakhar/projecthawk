@@ -10,9 +10,22 @@ permalink: /workflow/
         margin-bottom: 20px;
     }
 
+    .scroll_button:hover{
+        background-color: goldenrod !important;
+        color: white !important;
+    }
+    .scroll_button{
+        background-color: transparent !important;
+        color: black !important;
+    }
+
 </style>
 
+<!--TIMELINE SCSS IS TEMORARILY OFF-->
+<!--<link rel="stylesheet" href="{{site.baseurl}}/css/timeline.css">-->
+
 <section id="workflow">
+    
     <div class="container pt-100 pb-100">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -21,7 +34,8 @@ permalink: /workflow/
             </div>
         </div>
         <div class="row pb-30">
-            <div class="col-lg-12">
+            <div class="col-lg-8 offset-lg-2">
+            
                 <ul class="timeline">
 
                     {% for moment in site.data.settings.workflow.timelinedata %}
@@ -69,66 +83,111 @@ permalink: /workflow/
 
                     <li class="timeline-inverted rem_pad">
                         <div class="timeline-image"  style="display: flex; align-content: center; justify-content: center;">
-                            <h5 style="align-self: center; font-size: 1.25vw;">
+                            <h5 style="align-self: center; font-size: 1.1vw;">
                                 {{ site.data.settings.workflow.flow_end }}
                             </h5>
                         </div>
                     </li>
 
                 </ul>
-            </div>
+            <!--
+            {% for moment in site.data.settings.workflow.timelinedata %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 
-            <div class="col-lg-12">
-            <hr class="mb-30 mt-20">
-            <h3 class="pb-30">Send A Message</h3>
-    
-            <!--Add Quote Form Here-->
-            <form class="contact-form" action="SITEcontact/index/post/"
-            id="contact-form" method="post" data-hasrequired="* Required Fields"
-            novalidate="novalidate">
-        
-            <p><input name="name" id="name" title="Name" placeholder="Name" value=""
-                    class="input-text" type="text" data-validate="{required:true}"></p>
-            <p><input name="email" id="email" title="Email" placeholder="Email" value=""
-                    class="input-text" type="email"
-                    data-validate="{required:true, 'validate-email':true}"></p>
-            <p><input name="telephone" data-validate="{'validate-number':true , required:true}"
-                    id="telephone" title="Phone Number" placeholder="Phone Number" value=""
-                    class="input-text" type="text"></p>
-            <p><textarea name="comment" id="comment" title="What’s on your mind?"
-                    placeholder="What’s on your mind?" class="input-text" cols="5" rows="3"
-                    data-validate="{required:true}"></textarea></p>
-            <div class="field captcha required" role="contact_us">
-                <label for="captcha_contact_us" class="label"><span>Please type the letters and
-                        numbers below</span></label>
-                <div class="control captcha">
-                    <input name="captcha[contact_us]" type="text" class="input-text required-entry"
-                        data-validate="{required:true}" id="captcha_contact_us" autocomplete="off"
-                        aria-required="true">
-                    <div class="nested">
-                        <div class="field captcha no-label" data-captcha="contact_us"
-                            id="captcha-container-contact_us">
-                            <div class="control captcha-image">
-                                <img alt="Please type the letters and numbers below"
-                                    class="captcha-img" height="50"
-                                    src="SITEmedia/captcha/base/abdc2ae1fc50011be003d390775cb494.png">
-                                <button type="button" class="action reload captcha-reload"
-                                    title="Reload captcha"><span>Reload captcha</span></button>
-                            </div>
-                        </div>
+            {% if thecycle == 'odd' %}
+                <!- -first section- ->
+                <div class="row align-items-center how-it-works">
+                    <div class="col-2 text-center bottom">
+                    <div class="circle"><i class="fa fa-globe fa-2x"></i></div>
+                    </div>
+                    <div class="col-6">
+                    <h5>Fully Responsive</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
+                {% unless forloop.last %}
+                <!- -path between 1-2- ->
+                <div class="row timeline">
+                    <div class="col-2">
+                    <div class="corner top-right"></div>
+                    </div>
+                    <div class="col-8">
+                    <hr/>
+                    </div>
+                    <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                    </div>
+                </div>
+                {% endunless %}
+                {% else %}
+ 
+                <!- -second section- ->
+                <div class="row align-items-center justify-content-end how-it-works">
+                    <div class="col-6 text-right">
+                    <h5>Using Bootstrap</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-2 text-center full">
+                    <div class="circle"><i class="fa fa-globe fa-2x"></i></div>
+                    </div>
+                </div>
+                
+                {% unless forloop.last %}
+                <!- -path between 2-3- ->
+                <div class="row timeline">
+                    <div class="col-2">
+                    <div class="corner right-bottom"></div>
+                    </div>
+                    <div class="col-8">
+                    <hr/>
+                    </div>
+                    <div class="col-2">
+                    <div class="corner top-left"></div>
+                    </div>
+                </div>
+                
+                {% endunless %}
+                {% endif %}
+                {% endfor %}
+            -->
+
             </div>
-        
-            <div class="form-actions">
-                <button type="submit" title="Submit" class="btn-xl">
-                    <span>Submit</span>
-                </button>
-            </div>
+
+            <section  id="OrderFormSection">
+            <div class="col-lg-12">
+            <hr class="mb-30 mt-20">
+            <h3 class="pb-2">Ready to Order!</h3>
+            <h3 class="section-subheading text-muted pb-30" style="margin-bottom: 0;">Fill in the form and get in touch with our consultant.</h3>
+    
+            <!--Add Quote Form Here-->
+            <form id="order_Form" class="contact-form">
+
+                <input type="text" name="name" id="ord-name" placeholder="{{site.data.settings.formhold.name}}" required>
+                <input type="email" name="email" id="ord-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
+                <input type="tel" name="phone" id="ord-phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
+                <input type="text" name="addr" id="ord-address" placeholder="{{site.data.settings.formhold.address}}">
+                <textarea name="message" rows="5" id="ord-message" placeholder="{{site.data.settings.formhold.message-order}}" style="margin-bottom: 20px;"></textarea>
+
+                <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
+                    <button type="submit" title="Submit" class="btn-xl round-edge no-edge">
+                        <span>Order</span>
+                    </button>
+                </div>
+                <div class="firebase_store_status" id="ord-fire-success">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>Success!</strong> We will reach you shortly.    
+                </div>
+                <div class="firebase_store_status" id="ord-fire-fail" style="background:pink;">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>Error!</strong> Please Try Again Later.    
+                </div>
             </form>
+
             
             </div>
+            </section>
 
         </div>
     </div>
+
 </section>

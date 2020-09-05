@@ -111,7 +111,14 @@ workflow:
       head1: 'Place the order'
       head2: 
       subhead: 
-      desc: 'No need to wait anymore.'
+      desc: 'No need to wait anymore. <br />
+      <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">     
+          <a href="#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black;">
+            <span>Order Now!</span>
+          </a>
+      </div>
+      '
+
 
     - img: team_members/02.jpg
       head1: 'This is where the Magic happens'
@@ -195,21 +202,12 @@ mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.
 #-------------------------------
 # Form Settings
 formhold: 
+  address: Address
   company: "Your Company *"
+  faq: "Question *"
   mail-id: "Your Email *"
   message: "What's on your mind?"
+  message-order: "What is on your mind ? <br /> Eg: I want a coffee table with an aquarium built into it. *"
   name: "Your Name *"
   phone: "Phone Number *"
-  faq:  "Question *"
   phone_optional: "Phone Number"
-
-# Firebase
-firebase-keys:
-    apiKey: "AIzaSyAnQxHDqEeH1AUgzg49dJJgDoqx8zYjfTQ"
-    authDomain: "fir-contact-form-fc4aa.firebaseapp.com"
-    databaseURL: "https://fir-contact-form-fc4aa.firebaseio.com"
-    projectId: "fir-contact-form-fc4aa"
-    storageBucket: "fir-contact-form-fc4aa.appspot.com"
-    messagingSenderId: "764558957778"
-    appId: "1:764558957778:web:79cdd969d752292750a10b"
-    measurementId: "G-X3DKSH1T9Z"
