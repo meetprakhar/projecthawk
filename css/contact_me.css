@@ -10,7 +10,7 @@
   }
   
   .round-edge{
-	border-radius: 100px 100px 100px 100px;
+	border-radius: 100px 100px 100px 100px !important;
   }
 
   .no-edge{

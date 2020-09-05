@@ -8,8 +8,6 @@ permalink: /faq/
 <link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.css">
 <link rel="stylesheet" href="{{site.baseurl}}/css/faq_style.css">
 
-<link rel="stylesheet" href="{{site.baseurl}}/css/contact_me.css">
-
 
 <script>
     function showSection(){
@@ -103,27 +101,26 @@ permalink: /faq/
             <hr class="mb-30 mt-20">
             <h3 class="pb-30">Anything Else?</h3>
              
-            <!--Add Quote Form Here-->
 
-            <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
-
-            <form id="contactForm_new" class="contact-form"></form>
-
+            <form id="faqForm" class="contact-form" onsubmit="submitFAQ">
                 
-                <input type="text" name="name" id="name" placeholder="{{site.data.settings.formhold.name}}" required>
-                <input type="email" name="email" id="email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
-                <input type="tel" name="phone" id="phone" placeholder="{{site.data.settings.formhold.phone_optional}}" onkeypress="return isNumberKey(event)">
-                <textarea name="message" rows="5" id="message" placeholder="{{site.data.settings.formhold.faq}}" style="margin-bottom: 20px;" required></textarea>
+                <input type="text" name="name" id="faq-name" placeholder="{{site.data.settings.formhold.name}}" required>
+                <input type="email" name="email" id="faq-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
+                <input type="tel" name="phone" id="faq-phone" placeholder="{{site.data.settings.formhold.phone_optional}}" onkeypress="return isNumberKey(event)">
+                <textarea name="message" rows="5" id="faq-message" placeholder="{{site.data.settings.formhold.faq}}" style="margin-bottom: 20px;" required></textarea>
 
                 <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
                     <button type="submit" title="Submit" class="btn-xl round-edge no-edge">
                         <span>Submit</span>
                     </button>
                 </div>
-                <div class="firebase_store_status">
+                <div class="firebase_store_status" id="faq-fire-success">
                     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
                     <strong>Success!</strong> Your message has been sent.    
+                </div>
+                <div class="firebase_store_status" id="faq-fire-fail" style="background:pink;">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>Error!</strong> Please Try Again Later.    
                 </div>
 
             </form>

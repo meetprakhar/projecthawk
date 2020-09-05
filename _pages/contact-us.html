@@ -63,27 +63,28 @@ permalink: /contact-us/
         <div class="col-sm-6">
                 <h3>Send A Message</h3>
 
-                <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
-    
-                <form id="contactForm_contact_us" class="contact-form"></form>
-    
-                    <input type="text" name="name" id="name" placeholder="{{site.data.settings.formhold.name}}" required>
-                    <input type="email" name="email" id="email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
-                    <input type="tel" name="phone" id="phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
-                    <textarea name="message" rows="5" id="message" placeholder="{{site.data.settings.formhold.message}}" style="margin-bottom: 20px;"></textarea>
+                <form id="contactForm_contact_us" class="contact-form">
+
+                    <input type="text" name="name" id="ct-name" placeholder="{{site.data.settings.formhold.name}}" required>
+                    <input type="email" name="email" id="ct-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
+                    <input type="tel" name="phone" id="ct-phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
+                    <textarea name="message" rows="5" id="ct-message" placeholder="{{site.data.settings.formhold.message}}" style="margin-bottom: 20px;"></textarea>
     
                     <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
                         <button type="submit" title="Submit" class="btn-xl round-edge no-edge">
                             <span>Submit</span>
                         </button>
                     </div>
-                    <div class="firebase_store_status">
+                    <div class="firebase_store_status" id="ct-fire-success">
                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
                         <strong>Success!</strong> Your message has been sent.    
                     </div>
-    
+                    <div class="firebase_store_status" id="ct-fire-fail" style="background:pink;">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>Error!</strong> Please Try Again Later.    
+                    </div>
                 </form>
+
         </div>
     </div>
 
