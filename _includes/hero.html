@@ -1,7 +1,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
+<style>
+      .scroll_button{
+        background-color: goldenrod !important;
+        color: white !important;
+    }
+    .scroll_button:hover{
+        background-color: transparent !important;
+        color: black !important;
+    }
+</style>
 <!-- begin c-hero -->
 <section id="hero">
 <div class="hero">
@@ -11,8 +20,26 @@
     
       <div class="content_h">
         <div class="hero__content">
-          <h1 class="hero__title" style="margin-bottom: 10px; font-size: 60px;">{{ site.data.settings.intro.say-hello }}</h1>
-          <p class="hero__subtitle" style="font-size: 21.5px; text-align: left;">{{ site.data.settings.intro.bio }}</p>
+          <h1 class="hero__title" style="margin-bottom: 10px; font-size: 38px;">{{ site.data.settings.intro.say-hello }}</h1>
+          <p class="hero__subtitle" style="font-size: 18px; text-align: left;">{{ site.data.settings.intro.bio }}
+            <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: left; align-items: center;">     
+              <p style="color:black; width: auto !important;">
+                <h4>Book Consultation At:</h4>
+              </p>
+          </div>
+          <h4>
+            <span style='color:red;text-decoration:line-through; text-decoration-thickness: 2px;'>
+              <span style='color:black'>Rs: 2000</span>
+            </span></h4>
+            <h4>
+            <span style='color:black'>Rs: 0</span>
+            </h4>
+          <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: left; align-items: center;">     
+            <a href="{{site.baseurl}}/workflow/#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black; width: auto !important;">
+              <span>         Book Free Consultation Now!         </span>
+            </a>
+        </div>
+          </p>
         </div>
       </div>
       <div class="image_h">

@@ -105,7 +105,7 @@ workflow:
       head1: 'Get in touch'
       head2: 
       subhead: 
-      desc: 'Contact us with your problem, need or idea. <br \> One of our consultants will reach back to you. <br \> Get expert guidance to mould your idea into something real.'
+      desc: 'Contact us with your problem, need or idea. One of our consultants will reach back to you. Get expert guidance to mould your idea into something real.'
 
     - img: work_flow/w2.png
       head1: 'Place the order'
