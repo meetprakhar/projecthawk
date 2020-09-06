@@ -101,13 +101,13 @@ workflow:
   intro: 'Personal Care to each Request!'
   flow_end: 'BE PART<br/>OF OUR<br/>STORY!'
   timelinedata:
-    - img: team_members/02.jpg
+    - img: work_flow/w1.png
       head1: 'Get in touch'
       head2: 
       subhead: 
       desc: 'Contact us with your problem, need or idea. <br \> One of our consultants will reach back to you. <br \> Get expert guidance to mould your idea into something real.'
 
-    - img: team_members/02.jpg
+    - img: work_flow/w2.png
       head1: 'Place the order'
       head2: 
       subhead: 
@@ -119,14 +119,13 @@ workflow:
       </div>
       '
 
-
-    - img: team_members/02.jpg
+    - img: work_flow/w3.png
       head1: 'This is where the Magic happens'
       head2: 
       subhead: 
       desc: 'Skilled craftsmen diligently work to build quality products.'
 
-    - img: team_members/02.jpg
+    - img: work_flow/w4.png
       head1: 'Hurray! Delivered at your doorstep.'
       head2: 
       subhead: 
@@ -188,10 +187,6 @@ disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example
 instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
 instagram-profile: artemsheludko_ # Add instagram username
 
-
-#-------------------------------
-# Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
 
 
 #-------------------------------

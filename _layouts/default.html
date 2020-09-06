@@ -2,13 +2,16 @@
 <html lang="en" style="scroll-behavior: smooth;">
 
 {% include head.html %}
+{% include google-analytics.html %}
+  
 
 <body>
 
-  {% if site.data.settings.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N86T6ZX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
   {% include header.html %}
 
   <!-- begin content -->

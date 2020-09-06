@@ -45,6 +45,9 @@ function isNumberKey(evt){
         
         } else {
           // Data Saved Successfully
+          
+          document.getElementById('subscribe-form').reset();
+
           document.getElementById('sub_success_msg').style.display = 'block';
         
         }
@@ -90,6 +93,7 @@ function isNumberKey(evt){
       
       } else {
         // Data Saved Successfully
+        document.getElementById('contact-us').reset();
         document.getElementById(SuccessBoxId).style.display = 'block';
       
       }
@@ -135,6 +139,7 @@ function isNumberKey(evt){
         
         } else {
           // Data Saved Successfully
+          document.getElementById('faqForm').reset();
           document.getElementById(SuccessBoxId).style.display = 'block';
         
         }
@@ -240,8 +245,8 @@ function submitCallback(){
       
       } else {
         // Data Saved Successfully
-        document.getElementById(SuccessBoxId).style.display = 'block';
         document.getElementById('order_Form').reset();
+        document.getElementById(SuccessBoxId).style.display = 'block';
       }
     });
 
