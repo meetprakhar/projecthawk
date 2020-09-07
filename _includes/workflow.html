@@ -1,0 +1,189 @@
+
+<style>
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    .scroll_button:hover{
+        background-color: goldenrod !important;
+        color: white !important;
+    }
+    .scroll_button{
+        background-color: transparent !important;
+        color: black !important;
+    }
+
+</style>
+
+<!--TIMELINE SCSS IS TEMORARILY OFF-->
+<!--<link rel="stylesheet" href="{{site.baseurl}}/css/timeline.css">-->
+
+<section id="workflow">
+    
+    <div class="container pb-100">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Experience</h2>
+                <h3 class="section-subheading text-muted">{{ site.data.settings.workflow.intro }}</h3>
+            </div>
+        </div>
+        <div class="row pb-30">
+            <div class="col-lg-8 offset-lg-2">
+            
+                <ul class="timeline">
+
+                    {% for moment in site.data.settings.workflow.timelinedata %}
+                        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                        
+                        {% if thecycle == 'odd' %}
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{site.baseurl}}/images/{{moment.img}}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="subheading text-dark">{{moment.head1}}</h3>
+                                <h4 class="subheading">{{moment.head2}}</h4>
+                                <h5 class="subheading">{{moment.subhead}}</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    {{moment.desc}}
+                             </p>
+                            </div>
+                        </div>
+                    </li>
+                    {% else %}
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{site.baseurl}}/images/{{moment.img}}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="subheading text-dark">{{moment.head1}}</h3>
+                                <h4 class="subheading">{{moment.head2}}</h4>
+                                <h5 class="subheading">{{moment.subhead}}</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    {{moment.desc}}
+                             </p>
+                            </div>
+                        </div>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+
+                    <li class="timeline-inverted rem_pad">
+                        <div class="timeline-image"  style="display: flex; align-content: center; justify-content: center;">
+                            <h5 style="align-self: center; font-size: 1.1vw;">
+                                {{ site.data.settings.workflow.flow_end }}
+                            </h5>
+                        </div>
+                    </li>
+
+                </ul>
+            <!--
+            {% for moment in site.data.settings.workflow.timelinedata %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+
+            {% if thecycle == 'odd' %}
+                <!- -first section- ->
+                <div class="row align-items-center how-it-works">
+                    <div class="col-2 text-center bottom">
+                    <div class="circle"><i class="fa fa-globe fa-2x"></i></div>
+                    </div>
+                    <div class="col-6">
+                    <h5>Fully Responsive</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                {% unless forloop.last %}
+                <!- -path between 1-2- ->
+                <div class="row timeline">
+                    <div class="col-2">
+                    <div class="corner top-right"></div>
+                    </div>
+                    <div class="col-8">
+                    <hr/>
+                    </div>
+                    <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                    </div>
+                </div>
+                {% endunless %}
+                {% else %}
+ 
+                <!- -second section- ->
+                <div class="row align-items-center justify-content-end how-it-works">
+                    <div class="col-6 text-right">
+                    <h5>Using Bootstrap</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-2 text-center full">
+                    <div class="circle"><i class="fa fa-globe fa-2x"></i></div>
+                    </div>
+                </div>
+                
+                {% unless forloop.last %}
+                <!- -path between 2-3- ->
+                <div class="row timeline">
+                    <div class="col-2">
+                    <div class="corner right-bottom"></div>
+                    </div>
+                    <div class="col-8">
+                    <hr/>
+                    </div>
+                    <div class="col-2">
+                    <div class="corner top-left"></div>
+                    </div>
+                </div>
+                
+                {% endunless %}
+                {% endif %}
+                {% endfor %}
+            -->
+
+            </div>
+
+            <section  id="OrderFormSection">
+            <div class="col-lg-12">
+            <hr class="mb-30 mt-20">
+            <h3 class="pb-2">Ready to Order!</h3>
+            <h3 class="section-subheading text-muted pb-30" style="margin-bottom: 0;">Fill in the form and get in touch with our consultant.</h3>
+    
+            <!--Add Quote Form Here-->
+            <form id="order_Form" class="contact-form">
+
+                <input type="text" name="name" id="ord-name" placeholder="{{site.data.settings.formhold.name}}" required>
+                <input type="email" name="email" id="ord-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
+                <input type="tel" name="phone" id="ord-phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
+                <input type="text" name="addr" id="ord-address" placeholder="{{site.data.settings.formhold.address}}">
+                <textarea name="message" rows="5" id="ord-message" placeholder="{{site.data.settings.formhold.message-order}}" style="margin-bottom: 20px;"></textarea>
+
+                <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
+                    <button type="button" title="Submit" class="btn-xl round-edge no-edge" onclick="submitOrder();">
+                        <span>Order</span>
+                    </button>
+                </div>
+                <div class="firebase_store_status" id="ord-fire-success">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>Success!</strong> We will reach you shortly.    
+                </div>
+                <div class="firebase_store_status" id="ord-fire-fail" style="background:pink;">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>Error!</strong> Please Try Again Later.    
+                </div>
+            </form>
+
+            
+            </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- CALL loader_spin DIV for loading while submit-->
+</section>

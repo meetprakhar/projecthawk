@@ -124,3 +124,26 @@
       .alternate_posts > .row:nth-child(even) > .col-md-6:last-child {
         order: 2; } }
     
+        .step-wrapper .thumb-image {
+          width: 100%;
+          background: #fff;
+          overflow: hidden; }
+      
+          .step-wrapper .warm{
+            -webkit-filter:sepia(40%);
+            filter:sepia(40%);
+          }
+          .step-wrapper .thumb-image:hover img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: .80; }
+          .step-wrapper .thumb-image img {
+            height: 100%;
+            width: 100%;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            overflow: hidden; }
+          .step-wrapper .thumb-image a {
+            display: block; }

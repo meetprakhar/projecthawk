@@ -34,7 +34,7 @@ simplesteps:
   - image: simple_steps/crow1.png
     alt: 'A'
     title: Where there's a will, there's <Strong><a href="#">Axotico!</a></strong>
-    desc: We are a team of passionate and trained professionals who understand your hurdles and offer you the best, wisely curated solution chosen through methodical deliberation. We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>unconventional thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path towards innovation.</a></strong>
+    desc: We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>unconventional thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path towards innovation.</a></strong>
   
   - image: simple_steps/crow2.png
     alt: 'B'
@@ -48,6 +48,8 @@ simplesteps:
   
 #-------------------------------
 # Team Details
+our_team_heading: About Us
+our_team_subtext: 'We are a team of highly trained professionals comprising of IITians and NIFTians. <br /> We ensure that you are provided with premium quality products while building loyalty across every touchpoint. We understand your hurdles and offer you the best, wisely curated solution chosen through methodical deliberation.'
 team:
   - name: Prakhar Kumar
     pic: team_members/01.jpg

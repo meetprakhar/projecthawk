@@ -1,0 +1,56 @@
+---
+layout: default
+title: About Us
+permalink: /team/
+---
+
+<style>
+    .rcorners2 {
+        border-radius: 25px;
+        border: 2px solid #f5f5f5;
+        background-color: #f5f5f5;
+        max-width: 300px;
+        padding:20px
+}
+</style>
+
+<!-- Team Section -->
+<section id="team">
+    <div class="team-wrap">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{site.data.settings.our_team_heading}}</h2>
+                <p style="margin:0 10vw 100px 10vw;" class="large text-muted">
+                    {{site.data.settings.our_team_subtext}}
+                </p>
+            </div>
+        </div>
+
+        <div class="row ">
+            {% for member in site.data.settings.team %}
+
+            <div class="col-sm-4" style="align-content: center;justify-content: center;display: flex;">
+                <div class="team-member rcorners2">
+                    <img src="{{site.baseurl}}/images/{{ member.pic }}" class="img-responsive img-circle" alt="">
+                    <h4>{{ member.name }}</h4>
+                    <p class="text-muted">{{ member.position }}</p>
+                    <ul class="list-inline social-buttons" style="margin-top: 15px;">
+                        {% for network in member.social %}
+                        <li>
+                            <a href="{{ network.url }}">
+                                <i class="fa fa-{{ network.title }}"></i>
+                            </a>
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</section>

@@ -1,0 +1,37 @@
+<section id="SimpleSteps">
+    <div class="container pb-100">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Where there's a will, there's <Strong><a href="#">Axotico!</a></strong></h2>
+                <h3 class="section-subheading text-muted">Trust that inspires</h3>
+            </div>
+        </div>
+        <div class="row step-wrapper">
+        
+            {% for step in site.data.settings.simplesteps %}
+            <div class="col-md-4 col-sm-6">
+                
+            <div class="fadeIn pb-40" data-wow-duration="2s"
+            style="visibility: visible; animation-duration: 2s; animation-name: fadeIn;">
+                <div class="thumb-image warm" >
+                <img src="{{site.baseurl}}/images/{{step.image}}" class="img-responsive img-centered " alt="{{step.alt}}">
+                </div>
+            </div>
+                
+            <div class="blog-title pb-20" style="text-align: center;">
+                <h2>{{step.title}}</h2>
+            </div>
+
+            <p></p>
+            <p style="text-align: justify; font-size: 16px;">
+                {{step.desc}}
+            </p>
+
+            </div>
+                
+        {% endfor %}
+
+        </div>
+    </div>
+</section>
