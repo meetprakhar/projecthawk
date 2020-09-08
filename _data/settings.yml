@@ -12,7 +12,7 @@ author:
 # images wiil be fetched from the image/ folder
 intro:
   say-hello: Couldn't find it <strong><a>Anywhere?</a></strong>
-  bio:  'At Axotico we build upon <strong><a>your imagination</a></strong> to bring your ideas to life. We fabricate ideas proposed by you into <strong><a>premium products</a></strong> to make your life hassle-free and to transform your dreams into reality, delivered right at your doorstep.'
+  bio:  'At Dreamsify we build upon <strong><a>your imagination</a></strong> to bring your ideas to life. We fabricate ideas proposed by you into <strong><a>premium products</a></strong> to make your life hassle-free and to transform your dreams into reality, delivered right at your doorstep.'
   slideshow:
     - img: intro/i1.png
       alt: 'library couch'
@@ -30,16 +30,18 @@ intro:
 
 #-------------------------------
 # Three Simple Steps
+simplesteps_head: Where there's a will, there's <Strong><a href="#">Dreamsify!</a></strong>
+simplesteps_subhead:  "Customization made Easy!"
 simplesteps:
   - image: simple_steps/crow1.png
     alt: 'A'
-    title: Where there's a will, there's <Strong><a href="#">Axotico!</a></strong>
+    title: Where there's a will, there's <Strong><a href="#">Dreamsify!</a></strong>
     desc: We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>unconventional thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path towards innovation.</a></strong>
   
   - image: simple_steps/crow2.png
     alt: 'B'
-    title: <strong><a>Hassle-Free</a></strong> solutions
-    desc: 'Here at Axotico we animate your initiative by embracing your ideas while offering insights and provide you with <strong><a>customized products</a></strong> at your comfort. We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, technology and so on</a></strong>.'
+    title: No <strong><a>Boundaries</a></strong>
+    desc: 'Here at Dreamsify we animate your initiative by embracing your ideas while offering insights and provide you with <strong><a>customized products</a></strong> at your comfort. We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, technology and so on</a></strong>.'
   
   - image: simple_steps/crow3.png
     alt: 'C'
@@ -83,6 +85,17 @@ team:
       - title: envelope-o
         url: #
 
+  - name: Eric John Dungdun
+    pic: team_members/01.jpg
+    position: Marketing Lead 
+    social:
+      - title: linkedin
+        url: #
+      - title: instagram
+        url: #
+      - title: envelope-o
+        url: #
+
 #-------------------------------
 # contact Us Settings
 contactus:
@@ -101,7 +114,7 @@ contactus:
 
 workflow:
   intro: 'Personal Care to each Request!'
-  flow_end: 'BE PART<br/>OF OUR<br/>STORY!'
+  flow_end: work_flow/w5.png
   timelinedata:
     - img: work_flow/w1.png
       head1: 'Get in touch'
@@ -115,8 +128,8 @@ workflow:
       subhead: 
       desc: 'No need to wait anymore. <br />
       <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: left; align-items: center;">     
-          <a href="#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black; width: auto !important;">
-            <span>    Order Now!    </span>
+          <a href="#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black; width: auto !important; padding: 10px 10px 10px 10px;">
+            <span style="font-size: 20px;">    Order Now!    </span>
           </a>
       </div>
       '
@@ -132,6 +145,12 @@ workflow:
       head2: 
       subhead: 
       desc: 'Premium from Beginning to End.'
+
+    - img: work_flow/w5.png
+      head1: 'Feel Like a King!'
+      head2: 
+      subhead: 
+      desc: "You have the only piece in the world. Your idea will never used for anyone else, it's purely yours to enjoy!"
 
 #-------------------------------
 # Footer Settings
@@ -158,15 +177,17 @@ footer:
   useful_links_cols: 1
   useful_links:
     - name: 'Home'
-      link: #
-    - name: 'Workflow/Billing'
-      link: #
+      link: '#'
+    - name: 'Order'
+      link: '#OrderFormSection'
     - name: 'Contact Us'
-      link: #
+      link: contact-us
     - name: 'FAQs'
-      link: #
+      link: faq
     - name: 'Blog'
-      link: #
+      link: blog
+    - name: 'Our Team'
+      link: team
   subscribe_desc: 'Don’t miss to subscribe to our new feeds, kindly fill the form below.'
 
 

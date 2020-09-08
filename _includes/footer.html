@@ -66,13 +66,13 @@
                         {% if site.data.settings.footer.useful_links_cols == 1 %}
                         <ul class="left-list single_col">
                             {% for refer in site.data.settings.footer.useful_links %}
-                            <li class="single_col"><a href="{{refer.link}}">{{refer.name}}</a></li>
+                            <li class="single_col"><a href="{{site.baseurl}}/{{refer.link}}">{{refer.name}}</a></li>
                             {% endfor %}
                         </ul>
                         {% else %}
                         <ul class="left-list dual_col">
                             {% for refer in site.data.settings.footer.useful_links %}
-                            <li class="dual_col"><a href="{{refer.link}}">{{refer.name}}</a></li>
+                            <li class="dual_col"><a href="{{site.baseurl}}/{{refer.link}}">{{refer.name}}</a></li>
                             {% endfor %}
                         </ul>
                         {% endif %}
@@ -103,7 +103,7 @@
                                             value=""></div>
 
                                     <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe"
-                                            class="button" style="border-radius: 0px 6px 6px 0px;"><i class="fa fa-send"></i></button></div>
+                                            class="button" style="border-radius: 0px 6px 6px 0px; padding-bottom: 10px;"><i class="fa fa-send"></i></button></div>
                                 </div>
 
                             </form>

@@ -1,26 +1,48 @@
 #-------------------------------
 # FAQ Settings
+# Dont forget to replace apostrophie with the yaml escape character ''
+
 faqdata:
   - topic:
     name: General
     questions: 
       - id: 1
-        ques: Question 1
-        ans: This is answer one.
-      - id: 2
-        ques: Question 2
-        ans: This is answer one2.
-      - id: 3
-        ques: Question 3
-        ans: This is answer one3.
+        ques: How long does it take to develop a product?
+        ans: "Your product will be delivered at your doorstep after 1-2 weeks of finalisation of your design.Although, as each product is unique, the time to build your product may vary. The timeline looks like:<br />Design: As long as you take to finalise the design. Some customers might be ready with final design others might have just an idea, so one might iterate with Dreamsify for some time before finalising the design.<br />Production: Depending on the product and features required the production time can range from few days to few weeks. We will send the finished product''s photo, for you to approve before shipping. <br />Shipping:We ship as soon as the product gets ready. The customer chooses the shipping medium."
 
-  - topic:
-    name: NextGeneral
-    questions:
-      - id: 1
-        ques: Question 11
-        ans: This is answer two.
       - id: 2
-        ques: Question 12
-        ans: This is answer two2.
+        ques: Does Dreamsify use one design for multiple customers?
+        ans: "No, our products and designs are as unique as our customers. Consequently, allowing the customers to forever cherish the uniqueness and style of Dreamsify''s product."
+
+      - id: 3
+        ques: What all services are included in consultation fee?
+        ans: "It includes all the discussions and meetings required to finalise the design. Also, a team of design consultants provide the 2D or 3D visualisation of the product as per the requirement."
+
+      - id: 4
+        ques: Does Dreamsify only fulfil the single product demands?
+        ans: "We take bulk orders as well as the single product demands."
+
+      - id: 5
+        ques: I have an idea but no design, can I still order from Dreamsify?
+        ans: "A big yes! We are here to turn all your ideas and dreams into reality. Come to us with an idea or requirement and our accomplished artful consultants will design your dream product."
+
+      - id: 6
+        ques: When is the payment done for the products? What are the payment methods available?
+        ans: "You need to pay a small percentage of the agreed upon estimate while finalizing your order as a security token and complete the payment right before delivery. The payment can be completed though any form of online payment including UPI."
+
+      - id: 7
+        ques: How much does each Dreamsify product cost?
+        ans: "Dreamsify starts afresh with each idea and customer hence, the product''s cost can''t be decided beforehand.<br />
+        The best way to get an estimation is to book a consultation with Dreamsify. After collecting the bits of information, we share an estimation and with finer details, we soon present an exact amount."
+
+
+#  - topic:
+#    name: NextGeneral
+#    questions:
+#      - id: 1
+#        ques: Question 11
+#        ans: This is answer two.
+#      - id: 2
+#        ques: Question 12
+#        ans: This is answer two2.
         

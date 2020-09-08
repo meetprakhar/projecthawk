@@ -231,12 +231,21 @@ function submitCallback(){
     var msg = getInputVal('ord-message');
     var addr = getInputVal('ord-address');
 
+    if (document.getElementById('budget1').checked) {
+      budget = document.getElementById('budget1').value;
+    }else if(document.getElementById('budget2').checked) {
+      budget = document.getElementById('budget2').value;
+    }else if(document.getElementById('budget3').checked) {
+      budget = document.getElementById('budget3').value;
+    }
+
     var neworderRef = orderRef.push();
     neworderRef.set({
       name: name,
       email:email,
       phone: phone,
       address:addr,
+      budget:budget,
       msg:msg
     }, function(error){
       if(error){

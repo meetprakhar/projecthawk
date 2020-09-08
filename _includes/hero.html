@@ -10,6 +10,14 @@
         background-color: transparent !important;
         color: black !important;
     }
+    .carousel_title {
+      font-size: 4vw;
+    }
+    @media screen and (min-width: 420px) {
+      .carousel_title{
+        font-size: 24px;
+      }
+    }
 </style>
 <!-- begin c-hero -->
 <section id="hero">
@@ -23,10 +31,13 @@
           <h1 class="hero__title" style="margin-bottom: 10px; font-size: 38px;">{{ site.data.settings.intro.say-hello }}</h1>
           <p class="hero__subtitle" style="font-size: 18px; text-align: left;">{{ site.data.settings.intro.bio }}
             <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: left; align-items: center;">     
+             <!--
               <p style="color:black; width: auto !important;">
                 <h4>Book Consultation At:</h4>
               </p>
+            -->
           </div>
+          <!--
           <h4>
             <span style='color:red;text-decoration:line-through; text-decoration-thickness: 2px;'>
               <span style='color:black'> &#x20B9 2000</span>
@@ -34,12 +45,16 @@
             <h4>
             <span style='color:black'>&#x20B9 0</span>
             </h4>
+          -->
           <div class="container text-center" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: left; align-items: center;">     
-            <a href="{{site.baseurl}}/workflow/#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black; width: auto !important;">
-              <span>         Book Free Consultation Now!         </span>
+            <a href="{{site.baseurl}}/#OrderFormSection" class="btn-sm round-edge no-edge scroll_button" style="color:black; width: auto !important; padding:10px 20px 10px 20px;">
+              <span style="font-size: 18px;">         Book Free* Consultation Now!         </span>
             </a>
         </div>
-          </p>
+        
+          <span class="text-muted" style="font-size: 13px; padding-left: 23px;"> *Limited Period Offer</span>
+          
+        </p>
         </div>
       </div>
       <div class="image_h">
@@ -73,7 +88,7 @@
                   <div class="carousel-item">
                     <img src="{{site.baseurl}}/images/{{slide.img}}" alt="{{slide.alt}}">
                     <div class="carousel-caption" style="color: black;">
-                      <h3>{{slide.title}}</h3>
+                      <h3 class="carousel_title">{{slide.title}}</h3>
                       <p>{{slide.cap}}</p>
                     </div>
                   </div>

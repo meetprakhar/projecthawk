@@ -24,7 +24,7 @@
     <div class="container pb-100">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Experience</h2>
+                <h2 class="section-heading">How It Works</h2>
                 <h3 class="section-subheading text-muted">{{ site.data.settings.workflow.intro }}</h3>
             </div>
         </div>
@@ -75,15 +75,13 @@
                     </li>
                     {% endif %}
                     {% endfor %}
-
+                    <!--
                     <li class="timeline-inverted rem_pad">
                         <div class="timeline-image"  style="display: flex; align-content: center; justify-content: center;">
-                            <h5 style="align-self: center; font-size: 1.1vw;">
-                                {{ site.data.settings.workflow.flow_end }}
-                            </h5>
+                            <img class="img-circle img-responsive" src="{{site.baseurl}}/images/{{ site.data.settings.workflow.flow_end }}" alt="">
                         </div>
                     </li>
-
+                    -->
                 </ul>
             <!--
             {% for moment in site.data.settings.workflow.timelinedata %}
@@ -161,6 +159,22 @@
                 <input type="email" name="email" id="ord-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
                 <input type="tel" name="phone" id="ord-phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
                 <input type="text" name="addr" id="ord-address" placeholder="{{site.data.settings.formhold.address}}">
+                <span class="bordertxt">Budget Range</span>
+                <div class="radiogrp">
+                    <!-- name same then radio will in same group-->
+                    <div style="align-content: center; align-self: center;">
+                        <input type="radio" id="budget1" name="budget" value="10k">
+                        <label for="age1"> Less than &#x20B9; 10K </label><br>
+                    </div>
+                    <div style="align-content: center; align-self: center;">
+                        <input type="radio" id="budget2" name="budget" value="10k-50k">
+                        <label for="age1"> &#x20B9; 10K to &#x20B9; 50K </label><br>
+                    </div>
+                    <div style="align-content: center; align-self: center;">
+                        <input type="radio" id="budget3" name="budget" value="50k">
+                        <label for="age1"> Greater than &#x20B9; 50K </label><br>
+                    </div>
+                </div>
                 <textarea name="message" rows="5" id="ord-message" placeholder="{{site.data.settings.formhold.message-order}}" style="margin-bottom: 20px;"></textarea>
 
                 <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
