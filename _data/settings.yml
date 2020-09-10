@@ -1,10 +1,8 @@
 #-------------------------------
 # General Site Settings
-title: Zolan
-logo: logo.svg # You can add own logo.
-description: Zolan is modern minimal theme for Jekyll
-author:
-  name: Prakhar Kumar
+title: Dreamsify
+logo: site_images/logo_black.svg # You can add own logo.
+description: Dreamsify is a custom products marketplace producing orders on demand.
 
 
 #-------------------------------
@@ -31,20 +29,20 @@ intro:
 #-------------------------------
 # Three Simple Steps
 simplesteps_head: Where there's a will, there's <Strong><a href="#">Dreamsify!</a></strong>
-simplesteps_subhead:  "Customization made Easy!"
+simplesteps_subhead:  "Imagine beyond Existance!"
 simplesteps:
   - image: simple_steps/crow1.png
-    alt: 'A'
+    alt: 'The Need of Dreamsify'
     title: Where there's a will, there's <Strong><a href="#">Dreamsify!</a></strong>
     desc: We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>unconventional thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path towards innovation.</a></strong>
   
   - image: simple_steps/crow2.png
-    alt: 'B'
+    alt: 'The Ease of Dreamsify'
     title: No <strong><a>Boundaries</a></strong>
     desc: 'Here at Dreamsify we animate your initiative by embracing your ideas while offering insights and provide you with <strong><a>customized products</a></strong> at your comfort. We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, technology and so on</a></strong>.'
   
   - image: simple_steps/crow3.png
-    alt: 'C'
+    alt: 'The Benifits of Dreamsify'
     title: '<strong><a>Magic</a></strong> at your doorstep'
     desc: 'We bring you the <strong><a>best and most convenient</a></strong> solution at your doorstep all over India. <br /> So order now in <strong><a>single or bulk quantities</a></strong> and be assured to have a hassle-free experience delivered at the comfort of your own home.'
   

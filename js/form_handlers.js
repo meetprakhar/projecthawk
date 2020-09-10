@@ -237,6 +237,8 @@ function submitCallback(){
       budget = document.getElementById('budget2').value;
     }else if(document.getElementById('budget3').checked) {
       budget = document.getElementById('budget3').value;
+    }else if(document.getElementById('budget4').checked) {
+      budget = document.getElementById('budget4').value;
     }
 
     var neworderRef = orderRef.push();

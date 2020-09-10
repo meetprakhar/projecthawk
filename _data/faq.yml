@@ -35,6 +35,9 @@ faqdata:
         ans: 'Dreamsify starts afresh with each idea and customer hence, the product''s cost can''t be decided beforehand.<br />
         The best way to get an estimation is to book a consultation with Dreamsify. After collecting the bits of information, we share an estimation and with finer details, we soon present an exact amount.'
 
+      - id: 8
+        ques: Which sectors does Dreamsify work in?
+        ans: 'We have no boundaries on the product segment apart from your imagination.'
 
 #  - topic:
 #    name: NextGeneral

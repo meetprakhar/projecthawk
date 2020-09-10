@@ -1,8 +1,8 @@
 
 <!--
-Zolan - Modern & Minimal Theme for Jekyll
+Dreamsify - Modern & Minimal Theme for Jekyll
 ======
-Zolan is a minimal blog theme for Jekyll.
+Dreamsify is a minimal blog theme for Jekyll.
 
 * * *
 
@@ -48,13 +48,13 @@ Table of Contents
 
 ### Demo
 
-Check the theme in action [Demo](https://zolan-jekyll.netlify.app/)
+Check the theme in action [Demo](https://Dreamsify-jekyll.netlify.app/)
 
-![Main page preview](https://github.com/artemsheludko/zolan/blob/master/images/zolan-main-page.png?raw=true)
+![Main page preview](https://github.com/artemsheludko/Dreamsify/blob/master/images/Dreamsify-main-page.png?raw=true)
 
 The post page would look like this:
 
-![Post page preview](https://github.com/artemsheludko/zolan/blob/master/images/zolan-post.png?raw=true)
+![Post page preview](https://github.com/artemsheludko/Dreamsify/blob/master/images/Dreamsify-post.png?raw=true)
 
 * * *
 
@@ -89,7 +89,7 @@ For tags, try to not add space between two words, for example, `Ruby on Rails`, 
 
 ### Disqus Comments
 
-Zolan Theme comes with Disqus comments enabled.
+Dreamsify Theme comes with Disqus comments enabled.
 
 Open `_data/settings.yml` file, and change the `mr-brown` value on line 26 with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
 
