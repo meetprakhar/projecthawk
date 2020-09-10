@@ -5,7 +5,7 @@ date:   2020-09-10 00:00:00 +0530
 image:  postimg/20200910-Anjali-Post1.jpg
 tags:   Custom Products, Benefits, Dreamsify
 author:
-  name: Anjali R. Pahel
+  name: Anjali R. Pahal
 ---
 
 We value our customers&#39; satisfaction the most. We ensure customer satisfaction with strategic fulfilment of inherent needs with personal care to each order. We aspire to build unique products for unique customers, so that customers can take pride in Dreamsify products. We are on a journey to revolutionise customer experience and Dreamsifying your lives. The products that you own, define you and we want you to be contented, confident and happy. The features which make us the way we are:
