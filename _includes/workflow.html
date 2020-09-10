@@ -157,7 +157,7 @@
 
                 <input type="text" name="name" id="ord-name" placeholder="{{site.data.settings.formhold.name}}" required>
                 <input type="email" name="email" id="ord-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
-                <input type="tel" name="phone" id="ord-phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
+                <input type="tel" name="phone" id="ord-phone" placeholder="{{site.data.settings.formhold.phone}}" pattern="{{site.data.settings.mob-pattern}}" onkeypress="return isNumberKey(event)" required>
                 <input type="text" name="addr" id="ord-address" placeholder="{{site.data.settings.formhold.address}}">
                 <span class="bordertxt">Budget Range</span>
                 <div class="radiogrp">
@@ -183,7 +183,7 @@
 
                 <div class="container" style="padding-left: 0; padding-right: 0; margin-top: 20px; display: flex; justify-content: center;align-items: center;">
                     <button type="button" title="Submit" class="btn-xl round-edge no-edge" onclick="submitOrder();">
-                        <span>Order</span>
+                        <span><i class="fa fa-shopping-cart mr-2"></i>Order</span>    
                     </button>
                 </div>
                 <div class="firebase_store_status" id="ord-fire-success">

@@ -1,7 +1,8 @@
 #-------------------------------
 # General Site Settings
 title: Dreamsify
-logo: site_images/logo_black.svg # You can add own logo.
+logo: site_images/logo/logo_blk_tagline.png 
+logo_w: site_images/logo/logo_white_tagline.png
 description: Dreamsify is a custom products marketplace producing orders on demand.
 
 
@@ -29,22 +30,22 @@ intro:
 #-------------------------------
 # Three Simple Steps
 simplesteps_head: Where there's a will, there's <Strong><a href="#">Dreamsify!</a></strong>
-simplesteps_subhead:  "Imagine beyond Existance!"
+simplesteps_subhead:  "Imagine beyond Existence"
 simplesteps:
   - image: simple_steps/crow1.png
     alt: 'The Need of Dreamsify'
-    title: Where there's a will, there's <Strong><a href="#">Dreamsify!</a></strong>
+    title: <strong><a>Customize</a></strong> with us
     desc: We are the world's first and only company to solve problems in <strong><a>multiple domains</a></strong> by applying <strong><a>unconventional thinking</a></strong> to problems by embarking on a <strong><a>revolutionary path towards innovation.</a></strong>
   
   - image: simple_steps/crow2.png
     alt: 'The Ease of Dreamsify'
     title: No <strong><a>Boundaries</a></strong>
-    desc: 'Here at Dreamsify we animate your initiative by embracing your ideas while offering insights and provide you with <strong><a>customized products</a></strong> at your comfort. We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, technology and so on</a></strong>.'
+    desc: 'We deal with an endless range of products encompassing sectors like <strong><a>housing, industries, hotels, restaurants, technology and so on</a></strong>.'
   
   - image: simple_steps/crow3.png
     alt: 'The Benifits of Dreamsify'
     title: '<strong><a>Magic</a></strong> at your doorstep'
-    desc: 'We bring you the <strong><a>best and most convenient</a></strong> solution at your doorstep all over India. <br /> So order now in <strong><a>single or bulk quantities</a></strong> and be assured to have a hassle-free experience delivered at the comfort of your own home.'
+    desc: 'Order now in <strong><a>single or bulk quantities</a></strong> and be assured to have a hassle-free experience delivered at the comfort of your own home.'
   
 #-------------------------------
 # Team Details
@@ -56,43 +57,44 @@ team:
     position: co-founder and CEO
     social:
       - title: linkedin
-        url: #
+        url: https://in.linkedin.com/in/prakhar-kumar-iitism
       - title: globe
-        url: #
+        url: https://meetprakhar.github.io/
       - title: envelope-o
-        url: #
+        url: 'mailto: pka.alld.97@gmail.com'
 
   - name: Anjali R. Pahal
-    pic: team_members/01.jpg
+    pic: team_members/02.jpg
     position: co-founder and CTO
     social:
       - title: linkedin
-        url: #
-      - title: envelope-o
-        url: #
+        url: https://www.linkedin.com/in/anjali-rani
       - title: github
-        url: #
+        url: https://github.com/asciarp08
+      - title: envelope-o
+        url: 'mailto: anjalirpahal08@gmail.com'
+
   - name: Preksha Agarwal
-    pic: team_members/01.jpg
+    pic: team_members/03.jpg
     position: co-founder and COO 
     social:
       - title: linkedin
-        url: #
+        url: 'https://www.linkedin.com/in/preksha-agarwal-507764191'
       - title: instagram
-        url: #
+        url: 'https://www.instagram.com/notanormiehere/?hl=en'
       - title: envelope-o
-        url: #
+        url: 'mailto: preksha242@gmail.com'
 
-  - name: Eric John Dungdun
-    pic: team_members/01.jpg
-    position: Marketing Lead 
+  - name: Eric John Dungdung
+    pic: team_members/04.jpg
+    position: Marketing Head 
     social:
       - title: linkedin
-        url: #
+        url: https://www.linkedin.com/in/eric-john-dungdung-452b27158/
       - title: instagram
-        url: #
+        url: https://www.instagram.com/pirate_hothead/?hl=en
       - title: envelope-o
-        url: #
+        url: 'mailto: eric.17je002743@mech.iitism.ac.in'
 
 #-------------------------------
 # contact Us Settings
@@ -101,17 +103,20 @@ contactus:
   intro: 'Shoot us an e-mail or give us a call. '
   contacts:
     - icon: map
-      details: '<a href="#">aisjbdnasijdb ONE</a>'
+      details: 'A-9 vinayak city square <br />
+                7/9 S.P.Marg
+                Civil lines <br />
+                Prayagaraj'
     - icon: phone
-      details: 'aisjbdnasijdb TWO'
+      details: '+91-7367040374'
     - icon: envelope-open
-      details: 'aisjbdnasijdb THREE'
+      details: 'contact@dreamsify.com'
 
 #-------------------------------
 # WorkFlow Settings
 
 workflow:
-  intro: 'Personal Care to each Request!'
+  intro: 'Personal Care to each Request'
   flow_end: work_flow/w5.png
   timelinedata:
     - img: work_flow/w1.png
@@ -148,7 +153,7 @@ workflow:
       head1: 'Feel Like a King!'
       head2: 
       subhead: 
-      desc: "You have the only piece in the world. Your idea will never used for anyone else, it's purely yours to enjoy!"
+      desc: "You have the only piece in the world. Your idea will never be used for anyone else, it's just yours to enjoy!"
 
 #-------------------------------
 # Footer Settings
@@ -160,18 +165,26 @@ footer:
   contacts:
     - icon: map
       head: Find Us
-      details: 'Address'
+      details: 'A-9 vinayak city square <br />
+                7/9 S.P.Marg
+                Civil lines <br />
+                Prayagaraj'
     - icon: phone
       head: Call Us
-      details: '+91-9876543210'
+      details: '+91-7367040374'
     - icon: envelope-open
       head: Mail Us
-      details: 'mailus@example.com'
+      details: 'contact@dreamsify.com'
   social:
       - icon: twitter twitter-bg
-        url: #
+        url: 'https://twitter.com/DreamsifyO'
       - icon: facebook facebook-bg
-        url: #
+        url: 'https://www.facebook.com/Dreamsifyofficial-102536301599757/'
+      - icon: instagram instagram-bg
+        url: 'https://www.instagram.com/dreamsify.official/'
+      - icon: linkedin linkedin-bg
+        url: 'https://www.linkedin.com/company/dreamsify'
+        
   useful_links_cols: 1
   useful_links:
     - name: 'Home'
@@ -186,7 +199,7 @@ footer:
       link: blog
     - name: 'Our Team'
       link: team
-  subscribe_desc: 'Don’t miss to subscribe to our new feeds, kindly fill the form below.'
+  subscribe_desc: 'Don’t miss to subscribe to our new feeds. Leave your e-mail below.'
 
 
 #-------------------------------
@@ -200,7 +213,7 @@ pinterest: https://pinterest.com/ # Add your Pinterest handle
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: dreamsify # add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------
@@ -227,3 +240,8 @@ formhold:
   name: "Your Name *"
   phone: "Phone Number *"
   phone_optional: "Phone Number"
+
+
+#---------------------------------
+# Mobile verification pattern
+mob-pattern: \d{3}[\-]\d{3}[\-]\d{4}

@@ -63,7 +63,7 @@ input {
         
             <input type="text" name="name" id="rcb-name" placeholder="{{site.data.settings.formhold.name}}" required>
             <input type="email" name="email" id="rcb-email" data-validate="{required:true, 'validate-email':true}" placeholder="{{site.data.settings.formhold.mail-id}}" required>
-            <input type="tel" name="phone" id="rcb-phone" placeholder="{{site.data.settings.formhold.phone}}" onkeypress="return isNumberKey(event)" required>
+            <input type="tel" name="phone" id="rcb-phone" placeholder="{{site.data.settings.formhold.phone}}" pattern="{{site.data.settings.mob-pattern}}" onkeypress="return isNumberKey(event)" required>
            
         </div>
 

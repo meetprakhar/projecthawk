@@ -1,3 +1,15 @@
+<style>
+    .foot_pattern{
+        background-image: url("{{ site.baseurl }}/images/site_images/footer_map_white.png");
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+    }
+
+    .logoadj{
+        width: 65%;
+    }
+</style>
+
 <!-- begin footer -->
 <footer class="footer">
     <div class="container" style="text-align: left;">
@@ -22,25 +34,29 @@
             </div>
         </div>
 
-        <div class="footer-content pt-50 pb-30">
+        <div class="footer-content pt-50 pb-30 foot_pattern">
+            <!--
             <div class="footer-pattern">
                 <img src="{{ site.baseurl }}/images/site_images/footer_map_white.png" alt="" style="opacity: 0.2;">
             </div>
+            -->
             <div class="row">
                 <div class="col-xl-4 col-lg-4 mb-50">
                     <div class="footer-widget">
-                        <div class="footer-logo">
+                        <div class="footer-logo logoadj">
 
                             <a href="{{ site.data.settings.footer.logo_href }}"><img
-                                    src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}"
+                                    src="{{ site.baseurl }}/images/{{ site.data.settings.logo_w }}"
                                     alt="{{ site.data.settings.title }}" class="img-fluid"></a>
 
                         </div>
+                        <!--
                         <div class="footer-text">
                             <p>
                                 {{ site.data.settings.footer.desc }}
                             </p>
                         </div>
+                        -->
                         <div class="footer-social-icon">
 
                             {% if site.data.settings.footer.social.size > 0 %}

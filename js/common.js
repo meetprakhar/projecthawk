@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   menuCloseIcon.click(function () {
     menuClose();
-  })
+  }) 
 
   searchOpenIcon.click(function () {
     searchOpen();
@@ -51,12 +51,13 @@ $(document).ready(function() {
     searchBox.removeClass("is-visible");
   }
 
-  /* =======================
-  // Responsive Videos
-  ======================= */
-  $(".post__content, .page__content").fitVids({
-    customSelector: ['iframe[src*="ted.com"]']
-  });
+  
+  // /* =======================
+  // // Responsive Videos
+  // ======================= */
+  // $(".post__content, .page__content").fitVids({
+  //   customSelector: ['iframe[src*="ted.com"]']
+  // });
 
   /* =======================
   // Zoom Image
